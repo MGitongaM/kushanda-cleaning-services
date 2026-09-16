@@ -52,23 +52,18 @@ export default function ContactForm() {
     },
   })
 
-      function onSubmit(data: z.infer<typeof formSchema>) {
-    // toast("You submitted the following values:", {
-    //   description: (
-    //     <pre className="mt-2 w-[320px] overflow-x-auto rounded-md bg-code p-4 text-code-foreground">
-    //       <code>{JSON.stringify(data, null, 2)}</code>
-    //     </pre>
-    //   ),
-    //   position: "bottom-right",
-    //   classNames: {
-    //     content: "flex flex-col gap-2",
-    //   },
-    //   style: {
-    //     "--border-radius": "calc(var(--radius)  + 4px)",
-    //   } as React.CSSProperties,
-    // })
-    toast.success("Form has been submitted")
-    form.reset()
+     async function onSubmit(data: z.infer<typeof formSchema>) {
+ 
+    try {
+      const response= await fetch(`/api/sendContactEmail`,{method:"POST",headers:{"Content-Type": "application/json" },body:JSON.stringify(data)})
+      const result=await response.json()
+      if (result.ok){}
+      form.reset()
+      toast.success("Form has been submitted")
+    } catch (error:unknown) {
+        toast.error("Error submitting form, please try again later")
+        console.log(error instanceof Error)
+    }
   }
   return (
     <>
