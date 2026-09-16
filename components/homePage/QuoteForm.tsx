@@ -54,9 +54,19 @@ export default function QuoteForm() {
         },
       })
     
-          function onSubmit(data: z.infer<typeof formSchema>) {
-        toast.success("Details have been submitted")
-        form.reset()
+          async function onSubmit(data: z.infer<typeof formSchema>) {
+             try {
+                  const response= await fetch(`/api/sendQuoteEmail`,{method:"POST",headers:{"Content-Type": "application/json" },body:JSON.stringify(data)})
+                  const result=await response.json()
+                  if (result.ok){}
+                  form.reset()
+                  toast.success("Details have been submitted")
+                } catch (error:unknown) {
+                    toast.error("Error submitting quote, please try again later")
+                    console.log(error instanceof Error)
+                }
+
+        
         setOpen(false)
       }
   return (
