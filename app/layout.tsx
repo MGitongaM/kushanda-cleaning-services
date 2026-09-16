@@ -5,6 +5,7 @@ import FooterSection from "@/components/general/FooterSection";
 import { cn } from "@/lib/utils";
 import NavigationSection from "@/components/general/NavigationSection";
 import { Toaster } from "sonner";
+import { getCldOgImageUrl } from "next-cloudinary";
 
 const geistHeading = Geist({subsets:['latin'],variable:'--font-heading'});
 
@@ -20,9 +21,20 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const url= getCldOgImageUrl({src:"Kushanda_Cleaning_Services_Open_Graph_Image"})
+
 export const metadata: Metadata = {
   title: "Kushanda Cleaning Services",
   description: "Dependable cleaning for homes, offices and properties across Guernsey.",
+  openGraph:{
+    images:[
+      {
+        width:1200,
+        height:627,
+        url
+      }
+    ]
+  }
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
