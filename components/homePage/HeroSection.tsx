@@ -1,44 +1,49 @@
 import Link from "next/link";
-import { Button } from "../ui/button";
+import { buttonVariants } from "../ui/button";
 import QuoteForm from "./QuoteForm";
+import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
-    <>
-      <section className="mt-10">
-        <div className="container mx-auto min-h-[90dvh] px-4 py-10 relative">
-          <div className="container mx-auto min-h-[65dvh] bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1789559616/heroSection_bg_image.jpg')] bg-cover bg-center bg-no-repeat rounded-lg mt-20 relative"></div>
-          <div className="container mx-auto min-h-[65dvh] bg-black/40 backdrop-blur-sm rounded-lg absolute top-0 right-0 left-0 mt-30 z-10"></div>
-          <div className="mt-64 space-y-12 text-slate-100 absolute top-0 right-0 left-0  z-20">
-            <h1 className="text-4xl lg:text-7xl text-center  font-bold">
+    <section className="px-4 pt-28 pb-10 sm:pt-32 mt-5">
+      <div className="container mx-auto">
+        <div className="relative overflow-hidden rounded-xl min-h-[70dvh] sm:min-h-[75dvh] flex items-center justify-center">
+          {/* Background image */}
+          <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1789559616/heroSection_bg_image.jpg')] bg-cover bg-center bg-no-repeat" />
+          {/* Overlay */}
+          <div className="absolute inset-0 bg-black/45 backdrop-blur-[2px]" />
+
+          {/* Content */}
+          <div className="relative z-10 w-full px-4 py-10 sm:px-6 sm:py-14 lg:px-8 text-slate-100 flex flex-col items-center gap-6 sm:gap-8 text-center">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold leading-tight text-balance max-w-5xl">
               KUSHANDA CLEANING SERVICES
             </h1>
-            <p className="text-2xl text-center text-balance font-medium">
+            <p className="text-base sm:text-xl lg:text-2xl text-center text-balance font-medium max-w-3xl">
               Dependable cleaning for homes, offices and properties across
               Guernsey.
             </p>
-            <p className="max-w-4xl mx-auto text-xl text-center text-balance font-medium ">
+            <p className="max-w-3xl mx-auto text-sm sm:text-lg lg:text-xl text-center text-balance font-medium leading-relaxed">
               With more than 10 years&apos; experience running a cleaning
               business in London, Kushanda provides careful, consistent and
               reliable cleaning services tailored to your needs.
             </p>
-            <div className=" max-w-md mx-auto grid grid-cols-1 md:grid-cols-2 justify-center gap-8">
-              <div className="c">
+            <div className="w-full max-w-md sm:max-w-lg flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+              <div className="w-full sm:w-auto [&_button]:w-full sm:[&_button]:w-auto">
                 <QuoteForm />
               </div>
-              <Button
-                type="submit"
-                size="lg"
-                variant="secondary"
-                form="form-rhf-demo"
-                className="px-8 py-6 w-48 hover:bg-lime-100 text-xl"
+              <Link
+                href="#contact-us"
+                className={cn(
+                  buttonVariants({ variant: "secondary", size: "lg" }),
+                  "w-full sm:w-auto px-8 py-6 text-base sm:text-lg hover:bg-lime-100"
+                )}
               >
-                <Link href="\#contact-us">Contact Us</Link>
-              </Button>
+                Contact Us
+              </Link>
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

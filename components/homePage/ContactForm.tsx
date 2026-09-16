@@ -73,22 +73,22 @@ export default function ContactForm() {
   return (
     <>
         <Card className="w-full border border-cyan-200">
-      <CardHeader>
-        <CardTitle className="text-5xl font-bold ">Get In touch</CardTitle>
+      <CardHeader className="px-4 sm:px-6">
+        <CardTitle className="text-3xl sm:text-4xl lg:text-5xl font-bold">Get In touch</CardTitle>
         <CardDescription>
           
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className="px-4 sm:px-6">
         <form id="contact-form-1" onSubmit={form.handleSubmit(onSubmit)}>
           <FieldGroup>
-          <div className="flex gap-12 ">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
             <Controller
               name="name"
               control={form.control}
               render={({ field, fieldState }) => (
-                <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel htmlFor="form-rhf-name" className="text-lg">
+                <Field data-invalid={fieldState.invalid} className="flex-1">
+                  <FieldLabel htmlFor="form-rhf-name" className="text-base sm:text-lg">
                     Name
                   </FieldLabel>
                   <Input
@@ -110,8 +110,8 @@ export default function ContactForm() {
               name="email"
               control={form.control}
               render={({ field, fieldState }) => (
-                <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel htmlFor="form-rhf-email" className="text-lg">
+                <Field data-invalid={fieldState.invalid} className="flex-1">
+                  <FieldLabel htmlFor="form-rhf-email" className="text-base sm:text-lg">
                     Email
                   </FieldLabel>
                   <Input
@@ -136,7 +136,7 @@ export default function ContactForm() {
               control={form.control}
               render={({ field, fieldState }) => (
                 <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel htmlFor="form-rhf-subject" className="text-lg">
+                  <FieldLabel htmlFor="form-rhf-subject" className="text-base sm:text-lg">
                     Subject
                   </FieldLabel>
                   <Input
@@ -182,7 +182,7 @@ export default function ContactForm() {
               control={form.control}
               render={({ field, fieldState }) => (
                 <Field data-invalid={fieldState.invalid}>
-                  <FieldLabel htmlFor="contact-form-1-message" className="text-lg">
+                  <FieldLabel htmlFor="contact-form-1-message" className="text-base sm:text-lg">
                     Message
                   </FieldLabel>
                   <InputGroup>
@@ -208,12 +208,12 @@ export default function ContactForm() {
           </FieldGroup>
         </form>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="px-4 sm:px-6">
         <Field orientation="horizontal">
           {/* <Button type="button" variant="outline" onClick={() => form.reset()}>
             Reset
           </Button> */}
-          <Button type="submit" size="lg" form="contact-form-1" className="px-8 py-6 bg-lime-600 text-xl" disabled={form.formState.isSubmitting}>
+          <Button type="submit" size="lg" form="contact-form-1" className="w-full sm:w-auto px-8 py-6 bg-lime-600 text-base sm:text-lg" disabled={form.formState.isSubmitting}>
             {form.formState.isSubmitting ?"Submitting...":"Submit"}
           </Button>
         </Field>
