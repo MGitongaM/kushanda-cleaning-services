@@ -87,7 +87,7 @@ export default function QuoteForm() {
                 <DialogTitle className="text-xl sm:text-2xl">Request a Quote</DialogTitle>
                 <DialogDescription className="text-sm">Please fill all the fields</DialogDescription>
             </DialogHeader>
-       <Card className="w-full border border-cyan-200 shadow-none">
+       <Card className="w-full border border-cyan-200 shadow-none px-2">
           <CardHeader className="px-0 sm:px-2 pt-2">
             <CardTitle className="text-xl font-bold hidden">Get In touch</CardTitle>
             <CardDescription>

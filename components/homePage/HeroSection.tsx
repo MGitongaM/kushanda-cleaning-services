@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export default function HeroSection() {
   return (
-    <section className="px-4 pt-28 pb-10 sm:pt-32 mt-5">
+    <section className="px-4 pt-28 pb-10 sm:pt-32 mt-10 lg:mt-5">
       <div className="container mx-auto">
         <div className="relative overflow-hidden rounded-xl min-h-[70dvh] sm:min-h-[75dvh] flex items-center justify-center">
           {/* Background image */}
