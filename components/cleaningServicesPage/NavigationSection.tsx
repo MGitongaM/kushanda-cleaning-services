@@ -24,21 +24,17 @@ import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 
 const navLinks = [
   { id: 1, title: "Home", href: "/" },
-  { id: 3, title: "Services", href: "/#services" },
-  { id: 4, title: "How It Works", href: "" },
-  { id: 5, title: "Testimonials", href: "/#testimonials" },
-  { id: 6, title: "Plans & Rates", href: "" },
-  { id: 7, title: "Media", href: "" },
-  { id: 8, title: "Contact Us", href: "" },
+  { id: 3, title: "Our Services", href: "/#services" },
+  { id: 4, title: "Our Clientele", href: "/#Clientele" },
+  { id: 5, title: "Contact Us", href: "/#contact-us" },
 ];
 export default function NavigationSection() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      {/* <nav className=" fixed z-50"> */}
-      <nav className="fixed z-50">
+      <nav className=" fixed z-50">
         {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
-        <NavigationMenu className=" bg-slate-50 backdrop-blur-md min-w-[94dvw] lg:min-w-[99dvw] rounded-sm mx-auto   top-0 left-2 sm:left-6 lg:left-0">
+        <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[96dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-8">
           <NavigationMenuList className=" flex py-2">
             <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
               <NavigationMenuLink
@@ -46,11 +42,11 @@ export default function NavigationSection() {
                 className="bg-transparent hover:bg-transparent active:bg-transparent focus:bg-transparent"
               >
                 <CloudinaryImage
-                  imgSrc={"Kushand_Logo_White_Transparent"}
+                  imgSrc={"Kushanda_Cleaning_Services_logo_1"}
                   height={400}
                   width={400}
-                  alt={`Kushanda logo image`}
-                  classNames={"object-cover h-24 w-96 rounded-lg"}
+                  alt={`Kushanda Cleaning Services logo image`}
+                  classNames={"object-cover h-24 w-64 rounded-lg"}
                 />
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -63,7 +59,7 @@ export default function NavigationSection() {
                       key={link.id}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                        "text-slate-100 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-cyan-200",
                       )}
                       render={<Link href={link.href}>{link.title}</Link>}
                       href={link.href}
@@ -76,7 +72,7 @@ export default function NavigationSection() {
             <NavigationMenuItem className="mr-10 justify-end md:pl-0 hidden">
               <NavigationMenuLink
                 href="/contact-us"
-                className=" inline-block cursor-pointer rounded-md font-bold bg-amber-400 text-slate-900 hover:text-slate-900 hover:shadow-lg hover:bg-cyan-300"
+                className=" inline-block cursor-pointer rounded-md font-bold bg-cyan-200 text-slate-900 hover:text-slate-900 hover:shadow-lg hover:bg-cyan-300"
                 render={
                   <Button className="  hover:scale-110 transition-all transition-discrete ease-linear duration-500 shadow-md">
                       <Link href="/contact-us">
