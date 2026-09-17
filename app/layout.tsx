@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Noto_Sans } from "next/font/google";
 import "./globals.css";
-import FooterSection from "@/components/general/FooterSection";
 import { cn } from "@/lib/utils";
-import NavigationSection from "@/components/general/NavigationSection";
+// import FooterSection from "@/components/general/FooterSection";
+// import NavigationSection from "@/components/general/NavigationSection";
 import { Toaster } from "sonner";
 import { getCldOgImageUrl } from "next-cloudinary";
+import FooterSection from "@/components/general/FooterSection";
+import NavigationSection from "@/components/general/NavigationSection";
 
 const geistHeading = Geist({subsets:['latin'],variable:'--font-heading'});
 
