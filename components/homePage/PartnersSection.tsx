@@ -10,7 +10,7 @@ export default function PartnersSection() {
           <div className="flex flex-wrap justify-center items-center gap-4 my-28">
             
               {PartnersLogo.map((partner) => (
-                <div key={partner.id} className="w-auto h-20">
+                <div key={partner.id} className="w-48 h-20">
                   <CloudinaryImage
                     imgSrc={partner.imgSrc}
                     height={200}

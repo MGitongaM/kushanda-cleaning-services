@@ -1,7 +1,7 @@
 export default function HeroSection() {
   return (
     <>
-      <section className="mt-32">
+      <section className="mt-20">
         <div className="min-h-[50dvh]  relative">
           <div className=" absolute inset-0  bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1789631989/hero_homePage.png')] bg-cover bg-center bg-no-repeat" />
           <div className="absolute inset-0 bg-amber-5000/40" />

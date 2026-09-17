@@ -25,7 +25,6 @@ export default function FooterSection() {
                   <li key={link.id}>
                     <Link
                       href={link.href}
-                      target="_blank"
                       className="inline-block px-3 py-2 text-sm sm:text-base rounded-md hover:bg-amber-400 hover:text-slate-900 hover:shadow-sm transition-all duration-200"
                     >
                       {link.link}
@@ -38,7 +37,6 @@ export default function FooterSection() {
                   <li key={link.id}>
                     <Link
                       href={link.href}
-                      target="_blank"
                       className="inline-block px-3 py-2 text-sm sm:text-base rounded-md hover:bg-amber-400 hover:text-slate-900 hover:shadow-sm transition-all duration-200"
                     >
                       {link.link}
@@ -49,8 +47,7 @@ export default function FooterSection() {
               <ul className="flex flex-col justify-center lg:justify-start gap-3 sm:gap-6 list-none">
                 <li>
                   <Link
-                    href="/contact us"
-                    target="_blank"
+                    href="/contact-us"
                     className="inline-block px-3 py-2 text-sm sm:text-base rounded-md hover:bg-amber-400 hover:text-slate-900 hover:shadow-sm transition-all duration-200"
                   >
                     Contact Us
@@ -66,7 +63,7 @@ export default function FooterSection() {
             <p className="text-xs sm:text-sm text-slate-100 text-center flex flex-wrap items-center justify-center gap-1">
               <Copyright size={12} className="inline-block" />
               <span>Copyright Kushanda | Created by Kushanda | </span>
-              <span>{new Date().getFullYear()} Kushanda Cleaning Services</span>
+              <span>{new Date().getFullYear()}</span>
               <span>| Privacy Policy | Cookie Policy | Terms of Use</span>
             </p>
           </div>

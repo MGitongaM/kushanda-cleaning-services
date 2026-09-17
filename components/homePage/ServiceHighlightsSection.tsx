@@ -11,7 +11,7 @@ export default function ServiceHighlightsSection() {
     <>
       <section className="c">
         <div className="flex flex-col lg:flex-row">
-          <div className="w-full lg:w-[50dvw]">
+          <div className="w-full lg:w-[50dvw] min-h-[70dvh]">
             <CloudinaryImage
               imgSrc="empower_Image"
               height={400}

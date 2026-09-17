@@ -25,11 +25,12 @@ import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 const navLinks = [
   { id: 1, title: "Home", href: "/" },
   { id: 3, title: "Services", href: "/#services" },
-  { id: 4, title: "How It Works", href: "" },
-  { id: 5, title: "Testimonials", href: "/#testimonials" },
-  { id: 6, title: "Plans & Rates", href: "" },
-  { id: 7, title: "Media", href: "" },
-  { id: 8, title: "Contact Us", href: "" },
+  { id: 4, title: "How It Works", href: "/how-it-works" },
+  { id: 5, title: "About Us", href: "/about-us" },
+  { id: 6, title: "Testimonials", href: "/#testimonials" },
+  { id: 7, title: "Plans & Rates", href: "/plans-and-rates" },
+//   { id: 8, title: "Media", href: "" },
+  { id: 9, title: "Contact Us", href: "/contact-us" },
 ];
 export default function NavigationSection() {
   const [open, setOpen] = useState(false);
@@ -50,7 +51,7 @@ export default function NavigationSection() {
                   height={400}
                   width={400}
                   alt={`Kushanda logo image`}
-                  classNames={"object-cover h-24 w-96 rounded-lg"}
+                  classNames={"object-contain h-12 w-96 rounded-lg"}
                 />
               </NavigationMenuLink>
             </NavigationMenuItem>

@@ -70,17 +70,17 @@ export const FooterLinks1=[
   {
     id:1,
     link:"Services",
-    href:"/#",
+    href:"/#services",
   },
   {
     id:2,
     link:"How it works",
-    href:"/#",
+    href:"/how-it-works",
   },
   {
     id:3,
     link:"Plans & Rates",
-    href:"/#",
+    href:"/plans-and-rates",
   },
 ]
 export const FooterLinks2=[
@@ -92,7 +92,7 @@ export const FooterLinks2=[
   {
     id:2,
     link:"Testimonials",
-    href:"/#",
+    href:"/#testimonials",
   },
   {
     id:3,
