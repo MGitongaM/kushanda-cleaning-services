@@ -15,12 +15,11 @@ export default function FooterSection() {
                 height={400}
                 width={400}
                 alt={`Kushanda logo image`}
-                // classNames="object-cover h-28 sm:h-32 lg:h-40 w-auto max-w-[260px] sm:max-w-[320px] rounded-lg"
-                classNames="object-cover lg:object-contain h-72 sm:h-72 lg:h-72 w-auto max-w-[260px] sm:max-w-[320px] rounded-lg"
+                classNames="object-contain h-32 sm:h-40 lg:h-52 w-auto max-w-[220px] sm:max-w-[260px] lg:max-w-[320px] rounded-lg"
               />
             </div>
-            <div className="flex flex-1 justify-around items-center lg:items-start gap-6 lg:pt-8">
-              <ul className="flex flex-col justify-center lg:justify-start gap-3 sm:gap-6 list-none">
+            <div className="flex flex-col sm:flex-row flex-1 justify-around items-center sm:items-start lg:items-start gap-8 sm:gap-6 lg:pt-8 w-full">
+              <ul className="flex flex-col justify-center sm:justify-start lg:justify-start gap-2 sm:gap-3 lg:gap-6 list-none text-center sm:text-left w-full sm:w-auto">
                 {FooterLinks1.map((link) => (
                   <li key={link.id}>
                     <Link
@@ -32,7 +31,7 @@ export default function FooterSection() {
                   </li>
                 ))}
               </ul>
-              <ul className="flex flex-col justify-center lg:justify-start gap-3 sm:gap-6 list-none">
+              <ul className="flex flex-col justify-center sm:justify-start lg:justify-start gap-2 sm:gap-3 lg:gap-6 list-none text-center sm:text-left w-full sm:w-auto">
                 {FooterLinks2.map((link) => (
                   <li key={link.id}>
                     <Link
@@ -44,7 +43,7 @@ export default function FooterSection() {
                   </li>
                 ))}
               </ul>
-              <ul className="flex flex-col justify-center lg:justify-start gap-3 sm:gap-6 list-none">
+              <ul className="flex flex-col justify-center sm:justify-start lg:justify-start gap-2 sm:gap-3 lg:gap-6 list-none text-center sm:text-left w-full sm:w-auto">
                 <li>
                   <Link
                     href="/contact-us"
@@ -53,15 +52,15 @@ export default function FooterSection() {
                     Contact Us
                   </Link>
                 </li>
-                <li>+123 456 789</li>
+                <li className="text-sm sm:text-base px-3 py-2">+123 456 789</li>
               </ul>
             </div>
           </div>
 
-          <hr className="max-w-7xl mx-auto border bg-slate-100" />
-          <div className="flex justify-center items-center mt-8 sm:mt-10 pt-6 sm:pt-8 ">
-            <p className="text-xs sm:text-sm text-slate-100 text-center flex flex-wrap items-center justify-center gap-1">
-              <Copyright size={12} className="inline-block" />
+          <hr className="max-w-7xl mx-auto border border-slate-100/30 mt-8 sm:mt-10" />
+          <div className="flex justify-center items-center mt-6 sm:mt-8 pt-6 sm:pt-8 ">
+            <p className="text-xs sm:text-sm text-slate-100 text-center flex flex-wrap items-center justify-center gap-1 px-2 leading-relaxed">
+              <Copyright size={12} className="inline-block shrink-0" />
               <span>Copyright Kushanda | Created by Kushanda | </span>
               <span>{new Date().getFullYear()}</span>
               <span>| Privacy Policy | Cookie Policy | Terms of Use</span>

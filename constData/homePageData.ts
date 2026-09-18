@@ -9,7 +9,7 @@ export const TestimonialsOne = [
     to complain about`,
   },
   {
-    id: 1,
+    id: 2,
     name: "Musa Avens",
     title: "Founder, Global Logistics",
     imgSrc:"",
@@ -18,7 +18,7 @@ export const TestimonialsOne = [
     cillum dolore eu fugiat nulla pariatur.`,
   },
   {
-    id: 1,
+    id: 3,
     name: "Brown White",
     title: "Partner, Lawful Entreprises",
     imgSrc:"",

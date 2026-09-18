@@ -36,12 +36,12 @@ export default function NavigationSection() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      {/* <nav className=" fixed z-50"> */}
-      <nav className="fixed z-50">
-        {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
-        <NavigationMenu className=" bg-slate-50 backdrop-blur-md min-w-[94dvw] lg:min-w-[99dvw] rounded-sm mx-auto   top-0 left-2 sm:left-6 lg:left-0">
-          <NavigationMenuList className=" flex py-2">
-            <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
+      {/* <nav className="fixed top-0 inset-x-0 z-50 px-2 sm:px-4 lg:px-8 "> */}
+      <nav className="fixed top-0 inset-x-0 z-50  ">
+        {/* <NavigationMenu className=" bg-slate-50 backdrop-blur-md w-full max-w-7xl mx-auto rounded-sm"> */}
+        <NavigationMenu className=" bg-slate-50 backdrop-blur-md min-w-dvw mx-auto">
+          <NavigationMenuList className="flex items-center justify-between py-2 px-2 sm:px-4">
+            <NavigationMenuItem className="flex-1">
               <NavigationMenuLink
                 href="/"
                 className="bg-transparent hover:bg-transparent active:bg-transparent focus:bg-transparent"
@@ -51,7 +51,7 @@ export default function NavigationSection() {
                   height={400}
                   width={400}
                   alt={`Kushanda logo image`}
-                  classNames={"object-contain h-12 w-96 rounded-lg"}
+                  classNames={"object-contain h-10 sm:h-12 w-auto max-w-[160px] sm:max-w-[220px] lg:max-w-[280px] rounded-lg"}
                 />
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -92,11 +92,12 @@ export default function NavigationSection() {
             <div className="block  lg:hidden">
               <Sheet open={open} onOpenChange={setOpen}>
                 <SheetTrigger>
-                  <MenuSquare size={32} className="text-cyan-400 mr-2" />
+                  <MenuSquare size={32} className="text-amber-800 mr-2" />
                 </SheetTrigger>
                 <SheetContent
                   side="top"
-                  className="max-w-sm md:max-w-xl mx-auto rounded-b-md bg-slate-900/80 backdrop-blur-md border-none border-transparent"
+                  // className="max-w-sm md:max-w-xl mx-auto rounded-b-md bg-slate-100/80 backdrop-blur-md border-none border-transparent"
+                  className="w-full mx-auto rounded-b-md bg-slate-50 backdrop-blur-md border-none border-transparent"
                 >
                   <SheetHeader>
                     <SheetTitle></SheetTitle>
@@ -110,7 +111,8 @@ export default function NavigationSection() {
                             key={link.id}
                             className={cn(
                               navigationMenuTriggerStyle(),
-                              "block my-4 font-semibold  text-slate-100",
+                              // "block my-4 font-semibold  text-slate-100",
+                              "block my-4 font-semibold  text-amber-600",
                             )}
                             render={<Link href={link.href}>{link.title}</Link>}
                             href={link.href}
