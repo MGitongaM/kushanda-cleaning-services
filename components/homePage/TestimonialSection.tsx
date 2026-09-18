@@ -59,7 +59,7 @@ export default function TestimonialSection() {
         {/* testimonial carousel  */}
         <div className="min-h-[30dvh] mt-8 sm:mt-12 lg:mt-16 grid place-content-center px-4 py-8 sm:py-12">
           {/* <Carousel className="w-full max-w-sm md:max-w-lg mx-auto"> */}
-          <Carousel className="w-64 lg:max-w-lg mx-auto">
+          <Carousel className="w-64 lg:w-[30dvw] mx-auto">
             <CarouselContent>
               {TestimonialsOne.map((testimonial) => (
                 <CarouselItem key={testimonial.id}>
