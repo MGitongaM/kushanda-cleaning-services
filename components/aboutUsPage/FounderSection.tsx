@@ -3,10 +3,10 @@ import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 export default function FounderSection() {
   return (
     <>
-      <section className="min-h-[50dvh] bg-amber-600/20 ">
-        <div className="container mx-auto px-4 lg:px-32 py-8  my-20">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
-            <div className="col-span-5 border-4 border-amber-600">
+      <section className="bg-amber-600/20 py-10 sm:py-12 lg:py-16">
+        <div className="container mx-auto px-4 lg:px-12 xl:px-32 py-8">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 lg:gap-12 xl:gap-20">
+            <div className="md:col-span-5 border-4 border-amber-600 order-1 overflow-hidden rounded-sm aspect-[4/3] md:aspect-auto md:min-h-[400px]">
               <CloudinaryImage
                 imgSrc="Hero_How_it_Works"
                 height={400}
@@ -15,12 +15,12 @@ export default function FounderSection() {
                 classNames="object-cover w-full h-full"
               />
             </div>
-            <div className="col-span-7">
-              <h3 className="text-2xl text-amber-600 font-semibold">
+            <div className="md:col-span-7 order-2">
+              <h3 className="text-xl sm:text-2xl text-amber-600 font-semibold leading-tight">
                 Founder - Nyasha Gwatidzo
               </h3>
-              <div className="space-y-12 mt-4">
-                <p className="leading-7">
+              <div className="space-y-6 sm:space-y-8 lg:space-y-12 mt-4">
+                <p className="leading-relaxed sm:leading-7 text-sm sm:text-base">
                   Nyasha Gwatidzo was born in a rural village in Zimbabwe and
                   came over to the UK in the 1970&apos;s. Nyasha finished her &apos;A&apos;
                   levels and gained a degree in Chemistry from Lambeth Women in
@@ -32,7 +32,7 @@ export default function FounderSection() {
                   work with adults and children with emotional issues. Nyasha is
                   a qualified psychotherapist, social worker, coach and mentor.
                 </p>
-                <p className="leading-7">
+                <p className="leading-relaxed sm:leading-7 text-sm sm:text-base">
                   As a black African woman, Nyasha faced discrimination
                   throughout her journey but with sheer determination and
                   passion she developed a successful social enterprise. Nyasha
@@ -42,7 +42,7 @@ export default function FounderSection() {
                   enterprises in the United Kingdom, generating a cumulative
                   $130 million turnover.
                 </p>
-                <p className="leading-7">
+                <p className="leading-relaxed sm:leading-7 text-sm sm:text-base">
                   With a strong interest in social impact investment, solid
                   business acumen and extensive knowledge of Southern African
                   countries, Nyasha is a formidable business force specialising
@@ -56,14 +56,14 @@ export default function FounderSection() {
               </div>
             </div>
           </div>
-          <div className="my-20"/>
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-20">
-            <div className="col-span-7">
-              <h3 className="text-2xl text-amber-600 font-semibold">
+          <div className="my-12 sm:my-16 lg:my-20"/>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-8 sm:gap-12 lg:gap-12 xl:gap-20">
+            <div className="md:col-span-7 order-2 md:order-1">
+              <h3 className="text-xl sm:text-2xl text-amber-600 font-semibold leading-tight">
                 Founder - Catherine Chodokufa
               </h3>
-              <div className="space-y-12 mt-4">
-                <p className="leading-7">
+              <div className="space-y-6 sm:space-y-8 lg:space-y-12 mt-4">
+                <p className="leading-relaxed sm:leading-7 text-sm sm:text-base">
                   Nyasha Gwatidzo was born in a rural village in Zimbabwe and
                   came over to the UK in the 1970&apos;s. Nyasha finished her &apos;A&apos;
                   levels and gained a degree in Chemistry from Lambeth Women in
@@ -75,7 +75,7 @@ export default function FounderSection() {
                   work with adults and children with emotional issues. Nyasha is
                   a qualified psychotherapist, social worker, coach and mentor.
                 </p>
-                <p className="leading-7">
+                <p className="leading-relaxed sm:leading-7 text-sm sm:text-base">
                   As a black African woman, Nyasha faced discrimination
                   throughout her journey but with sheer determination and
                   passion she developed a successful social enterprise. Nyasha
@@ -85,7 +85,7 @@ export default function FounderSection() {
                   enterprises in the United Kingdom, generating a cumulative
                   $130 million turnover.
                 </p>
-                <p className="leading-7">
+                <p className="leading-relaxed sm:leading-7 text-sm sm:text-base">
                   With a strong interest in social impact investment, solid
                   business acumen and extensive knowledge of Southern African
                   countries, Nyasha is a formidable business force specialising
@@ -98,7 +98,7 @@ export default function FounderSection() {
                 </p>
               </div>
             </div>
-            <div className="col-span-5 border-4 border-amber-600">
+            <div className="md:col-span-5 border-4 border-amber-600 order-1 md:order-2 overflow-hidden rounded-sm aspect-[4/3] md:aspect-auto md:min-h-[400px]">
               <CloudinaryImage
                 imgSrc="Hero_How_it_Works"
                 height={400}
