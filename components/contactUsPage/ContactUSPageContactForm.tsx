@@ -31,6 +31,7 @@ const formSchema = z.object({
     .min(2, "Your firstName  must be at least 2 characters."),
   lastName: z.string().min(2, "LastName must be at least 2 characters."),
   message: z.string().min(2, "The message must be at least 2 characters."),
+  subject:z.string(),
 });
 
 export default function ContactUSPageContactForm() {
@@ -41,6 +42,7 @@ export default function ContactUSPageContactForm() {
       firstName: "",
       lastName: "",
       message: "",
+      subject:"Kushanda.co/contact-us Contact Us Form"
     },
   });
 

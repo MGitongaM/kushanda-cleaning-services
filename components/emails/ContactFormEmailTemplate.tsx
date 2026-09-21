@@ -30,15 +30,17 @@ export default function ContactFormEmailTemplate({name,email,subject,message}:Co
         }}
       >
         <Body className="mx-auto my-auto bg-white px-2 font-sans">
-          <Preview>Contact Form - Kushanda.co</Preview>
+          {/* <Preview>Contact Form - Kushanda.co</Preview> */}
+          <Preview>{subject}</Preview>
           <Container className="mx-auto my-10 max-w-116.25 rounded border border-[#eaeaea] border-solid p-5">
             <Section className="mt-8">
               <Img
-                src={`https://res.cloudinary.com/hqho8qw7/image/upload/v1789568822/Kushanda_Cleaning_Services_logo_1.png`}
+                // src={`https://res.cloudinary.com/hqho8qw7/image/upload/v1789568822/Kushanda_Cleaning_Services_logo_1.png`}
+                src={`https://res.cloudinary.com/hqho8qw7/image/upload/v1789632053/Kushand_Logo_White_Transparent.png`}
                 width="400"
                 height="400"
                 alt="Kushanda Co Logo"
-                className="object-cover size-80"
+                className="object-contain w-80 h-auto"
               />
             </Section>
             <Heading className="mx-0 my-7.5 p-0 text-center font-normal text-[24px] text-black">
@@ -47,7 +49,7 @@ export default function ContactFormEmailTemplate({name,email,subject,message}:Co
               Hi Team,
             </Text>
             <Text className="text-[14px] text-black leading-6">
-                Here is are the details from Kushanda Cleaning Services Contact Form:
+                Here is are the details from Kushanda Website:
              
             </Text>
             <Section>
