@@ -10,13 +10,15 @@ export default function FooterSection() {
         <div className="container mx-auto px-4 py-10 sm:py-12 lg:py-16">
           <div className="w-full text-slate-100 flex flex-col lg:flex-row gap-8 lg:gap-12 justify-between items-center lg:items-start text-center lg:text-left">
             <div className="flex flex-col items-center lg:items-start shrink-0">
-              <CloudinaryImage
-                imgSrc={"Kushanda_footer_logo_Transparent"}
-                height={400}
-                width={400}
-                alt={`Kushanda logo image`}
-                classNames="object-contain h-32 sm:h-40 lg:h-52 w-auto max-w-[220px] sm:max-w-[260px] lg:max-w-[320px] rounded-lg"
-              />
+              <Link href="/">
+                <CloudinaryImage
+                  imgSrc={"Kushanda_footer_logo_Transparent"}
+                  height={400}
+                  width={400}
+                  alt={`Kushanda logo image`}
+                  classNames="object-contain h-32 sm:h-40 lg:h-52 w-auto max-w-[220px] sm:max-w-[260px] lg:max-w-[320px] rounded-lg"
+                />
+              </Link>
             </div>
             <div className="flex flex-col sm:flex-row flex-1 justify-around items-center sm:items-start lg:items-start gap-8 sm:gap-6 lg:pt-8 w-full">
               <ul className="flex flex-col justify-center sm:justify-start lg:justify-start gap-2 sm:gap-3 lg:gap-6 list-none text-center sm:text-left w-full sm:w-auto">

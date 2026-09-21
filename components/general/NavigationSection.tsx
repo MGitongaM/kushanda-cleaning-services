@@ -2,9 +2,11 @@
 
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "../ui/navigation-menu";
 import Link from "next/link";
@@ -23,15 +25,23 @@ import { Button } from "../ui/button";
 import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 
 const navLinks = [
-  { id: 1, title: "Home", href: "/" },
-  { id: 3, title: "Services", href: "/#services" },
-  { id: 4, title: "How It Works", href: "/how-it-works" },
-  { id: 5, title: "About Us", href: "/about-us" },
-  { id: 6, title: "Testimonials", href: "/#testimonials" },
-  { id: 7, title: "Plans & Rates", href: "/plans-and-rates" },
-//   { id: 8, title: "Media", href: "" },
-  { id: 9, title: "Contact Us", href: "/contact-us" },
+  // { id: 1, title: "Home", href: "/" },
+  // { id: 2, title: "Services", href: "/#services" },
+  { id: 3, title: "How It Works", href: "/how-it-works" },
+  { id: 4, title: "About Us", href: "/about-us" },
+  { id: 5, title: "Testimonials", href: "/#testimonials" },
+  { id: 6, title: "Plans & Rates", href: "/plans-and-rates" },
+  { id: 7, title: "Contact Us", href: "/contact-us" },
+  //   { id: 8, title: "Media", href: "" },
 ];
+const servicesLink = [
+  // { id: 1, title: "Cleaning Services", href: "/cleaning-services" },
+  { id: 2, title: "Executive Support", href: "/executive-support" },
+  { id: 3, title: "Digital Marketing", href: "/digital-marketing" },
+  { id: 4, title: "Websites", href: "/websites" },
+  { id: 5, title: "Account Management and Book Keeping", href: "/account-management-and-book-keeping" },
+];
+
 export default function NavigationSection() {
   const [open, setOpen] = useState(false);
   return (
@@ -51,26 +61,56 @@ export default function NavigationSection() {
                   height={400}
                   width={400}
                   alt={`Kushanda logo image`}
-                  classNames={"object-contain h-10 sm:h-12 w-auto max-w-[160px] sm:max-w-[220px] lg:max-w-[280px] rounded-lg"}
+                  classNames={
+                    "object-contain h-10 sm:h-12 w-auto max-w-[160px] sm:max-w-[220px] lg:max-w-[280px] rounded-lg"
+                  }
                 />
               </NavigationMenuLink>
             </NavigationMenuItem>
             {/* desktop navigation */}
             <div className="hidden lg:block flex-1 bg-amber-2000">
-              <div className="grid place-content-center mr-0 lg:mr-">
-                <NavigationMenuItem>
-                  {navLinks.map((link) => (
-                    <NavigationMenuLink
-                      key={link.id}
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
-                      )}
-                      render={<Link href={link.href}>{link.title}</Link>}
-                      href={link.href}
-                    />
-                  ))}
+              {/* <div className="grid place-content-center mr-0 lg:mr-"> */}
+              <div className="flex ">
+                  <NavigationMenuItem>
+                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),
+                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400")}
+                       render={<Link href="/">Home</Link>} />
                 </NavigationMenuItem>
+                <NavigationMenuItem>
+                   <NavigationMenuTrigger
+                    className={cn(
+                      navigationMenuTriggerStyle(),
+                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                    )}
+                  >
+                    Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul>
+                      {servicesLink.map((link) => (
+                        <NavigationMenuLink
+                          key={link.id}
+                          className={cn(
+                            navigationMenuTriggerStyle(),
+                            "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                          )}
+                          render={<Link href={link.href}>{link.title}</Link>}
+                          href={link.href}
+                        />
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
+                </NavigationMenuItem>
+                  <NavigationMenuItem>
+                    {navLinks.map((link)=>(
+                      <NavigationMenuLink key={link.id} className={cn(navigationMenuTriggerStyle(),
+                        "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400")}
+                         render={<Link href={link.href}>{link.title}</Link>} />
+
+                    ))}
+                </NavigationMenuItem>
+
+               
               </div>
             </div>
             {/* <div className="bg-red-500"> */}
@@ -80,10 +120,8 @@ export default function NavigationSection() {
                 className=" inline-block cursor-pointer rounded-md font-bold bg-amber-400 text-slate-900 hover:text-slate-900 hover:shadow-lg hover:bg-cyan-300"
                 render={
                   <Button className="  hover:scale-110 transition-all transition-discrete ease-linear duration-500 shadow-md">
-                      <Link href="/contact-us">
-                      Get AV Quote
-                  </Link>
-                    </Button>
+                    <Link href="/contact-us">Get AV Quote</Link>
+                  </Button>
                 }
               />
             </NavigationMenuItem>
@@ -119,6 +157,30 @@ export default function NavigationSection() {
                             onClick={() => setOpen(false)}
                           />
                         ))}
+                          <NavigationMenuTrigger
+                    className={cn(
+                      navigationMenuTriggerStyle(),
+                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                    )}
+                  >
+                    Services
+                  </NavigationMenuTrigger>
+                  <NavigationMenuContent>
+                    <ul>
+                      {servicesLink.map((link) => (
+                        <NavigationMenuLink
+                          key={link.id}
+                          className={cn(
+                            navigationMenuTriggerStyle(),
+                            "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                          )}
+                          render={<Link href={link.href}>{link.title}</Link>}
+                          href={link.href}
+                          onClick={() => setOpen(false)}
+                        />
+                      ))}
+                    </ul>
+                  </NavigationMenuContent>
                       </NavigationMenuItem>
                     </div>
                   </div>
