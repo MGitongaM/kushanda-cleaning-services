@@ -23,11 +23,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const url= getCldOgImageUrl({src:"Kushanda_Cleaning_Services_Open_Graph_Image"})
+const url= getCldOgImageUrl({src:"kushanda_OG_image"})
 
 export const metadata: Metadata = {
-  title: "Kushanda Cleaning Services",
-  description: "Dependable cleaning for homes, offices and properties across Guernsey.",
+  title: "Kushanda",
+  description: "Scale your business with top tier global virtual assistants. Access skilled remote professionals for administrative, technical, and creative support.",
   openGraph:{
     images:[
       {
