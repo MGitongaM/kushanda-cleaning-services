@@ -19,7 +19,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet";
-import { MenuSquare } from "lucide-react";
+import { ChevronDown, MenuSquare } from "lucide-react";
 import { useState } from "react";
 import { Button } from "../ui/button";
 import CloudinaryImage from "../mediaComponents/CloudinaryImage";
@@ -39,7 +39,11 @@ const servicesLink = [
   { id: 2, title: "Executive Support", href: "/executive-support" },
   { id: 3, title: "Digital Marketing", href: "/digital-marketing" },
   { id: 4, title: "Websites", href: "/websites" },
-  { id: 5, title: "Account Management and Book Keeping", href: "/account-management-and-book-keeping" },
+  {
+    id: 5,
+    title: "Account Management and Book Keeping",
+    href: "/account-management-and-book-keeping",
+  },
 ];
 
 export default function NavigationSection() {
@@ -71,13 +75,17 @@ export default function NavigationSection() {
             <div className="hidden lg:block flex-1 bg-amber-2000">
               {/* <div className="grid place-content-center mr-0 lg:mr-"> */}
               <div className="flex ">
-                  <NavigationMenuItem>
-                    <NavigationMenuLink className={cn(navigationMenuTriggerStyle(),
-                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400")}
-                       render={<Link href="/">Home</Link>} />
+                <NavigationMenuItem>
+                  <NavigationMenuLink
+                    className={cn(
+                      navigationMenuTriggerStyle(),
+                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                    )}
+                    render={<Link href="/">Home</Link>}
+                  />
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                   <NavigationMenuTrigger
+                  <NavigationMenuTrigger
                     className={cn(
                       navigationMenuTriggerStyle(),
                       "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
@@ -101,16 +109,18 @@ export default function NavigationSection() {
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
-                  <NavigationMenuItem>
-                    {navLinks.map((link)=>(
-                      <NavigationMenuLink key={link.id} className={cn(navigationMenuTriggerStyle(),
-                        "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400")}
-                         render={<Link href={link.href}>{link.title}</Link>} />
-
-                    ))}
+                <NavigationMenuItem>
+                  {navLinks.map((link) => (
+                    <NavigationMenuLink
+                      key={link.id}
+                      className={cn(
+                        navigationMenuTriggerStyle(),
+                        "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                      )}
+                      render={<Link href={link.href}>{link.title}</Link>}
+                    />
+                  ))}
                 </NavigationMenuItem>
-
-               
               </div>
             </div>
             {/* <div className="bg-red-500"> */}
@@ -157,30 +167,19 @@ export default function NavigationSection() {
                             onClick={() => setOpen(false)}
                           />
                         ))}
-                          <NavigationMenuTrigger
-                    className={cn(
-                      navigationMenuTriggerStyle(),
-                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
-                    )}
-                  >
-                    Services
-                  </NavigationMenuTrigger>
-                  <NavigationMenuContent>
-                    <ul>
-                      {servicesLink.map((link) => (
-                        <NavigationMenuLink
-                          key={link.id}
-                          className={cn(
-                            navigationMenuTriggerStyle(),
-                            "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
-                          )}
-                          render={<Link href={link.href}>{link.title}</Link>}
-                          href={link.href}
-                          onClick={() => setOpen(false)}
-                        />
-                      ))}
-                    </ul>
-                  </NavigationMenuContent>
+                        <p className="text-amber-400 font-semibold  ml-2">Services<ChevronDown className="text-amber-400 inline-block ml-1"/></p>
+                        {servicesLink.map((link) => (
+                          <NavigationMenuLink
+                            key={link.id}
+                            className={cn(
+                              navigationMenuTriggerStyle(),
+                              "block my-4 ml-4 text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                            )}
+                            render={<Link href={link.href}>{link.title}</Link>}
+                            href={link.href}
+                            onClick={() => setOpen(false)}
+                          />
+                        ))}
                       </NavigationMenuItem>
                     </div>
                   </div>
