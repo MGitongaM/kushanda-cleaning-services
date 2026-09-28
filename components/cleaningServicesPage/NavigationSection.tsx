@@ -23,10 +23,10 @@ import { Button } from "../ui/button";
 import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 
 const navLinks = [
-  { id: 1, title: "Home", href: "/" },
-  { id: 3, title: "Our Services", href: "/#services" },
-  { id: 4, title: "Our Clientele", href: "/#Clientele" },
-  { id: 5, title: "Contact Us", href: "/#contact-us" },
+  // { id: 1, title: "Home", href: "/" },
+  { id: 3, title: "Our Services", href: "/cleaning-services#services" },
+  { id: 4, title: "Our Clientele", href: "/cleaning-services#Clientele" },
+  { id: 5, title: "Contact Us", href: "/cleaning-services#contact-us" },
 ];
 export default function NavigationSection() {
   const [open, setOpen] = useState(false);
@@ -34,7 +34,8 @@ export default function NavigationSection() {
     <>
       <nav className=" fixed z-50">
         {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
-        <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[96dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-8">
+        {/* <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[96dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-8"> */}
+        <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-dvw mx-auto   top-0  ">
           <NavigationMenuList className=" flex py-2">
             <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
               <NavigationMenuLink

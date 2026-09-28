@@ -77,19 +77,19 @@ export const FutureCleaningServices=[
 export const OurClients=[
     {
         id:1,
-        imgSrc:"uk_Homes",
+        imgSrc:"guernsey_uk_Homes",
         title:"Homes",
         textOne:"For homeowners and tenants who want reliable help keeping their property clean.",
     },
     {
         id:2,
-        imgSrc:"uk_Businesses",
+        imgSrc:"guernsey_uk_Businesses",
         title:"Businesses",
         textOne:"For offices and commercial spaces that need consistent cleaning support.",
     },
     {
         id:3,
-        imgSrc:"Landlords_Property_Managers",
+        imgSrc:"guernsey_Landlords_Property_Managers",
         title:"Landlords & Property Managers",
         textOne:"For properties that need cleaning between occupants or ongoing maintenance.",
     },
