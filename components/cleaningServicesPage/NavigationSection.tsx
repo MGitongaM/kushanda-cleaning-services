@@ -35,8 +35,8 @@ export default function NavigationSection() {
       <nav className=" fixed z-50">
         {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
         {/* <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[96dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-8"> */}
-        <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-dvw mx-auto   top-0  ">
-          <NavigationMenuList className=" flex py-2">
+        <NavigationMenu className=" bg-orange-100/80 backdrop-blur-md min-w-[94dvw] lg:min-w-dvw mx-auto   top-0  ">
+          <NavigationMenuList className=" flex py-8">
             <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
               <NavigationMenuLink
                 href="/"
@@ -47,7 +47,7 @@ export default function NavigationSection() {
                   height={400}
                   width={400}
                   alt={`Kushanda Cleaning Services logo image`}
-                  classNames={"object-cover h-24 w-64 rounded-lg"}
+                  classNames={"object-cover hidden h-24 w-64 rounded-lg"}
                 />
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -60,7 +60,7 @@ export default function NavigationSection() {
                       key={link.id}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "text-slate-100 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-cyan-200",
+                        "text-slate-700 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-cyan-200",
                       )}
                       render={<Link href={link.href}>{link.title}</Link>}
                       href={link.href}
@@ -106,7 +106,7 @@ export default function NavigationSection() {
                             key={link.id}
                             className={cn(
                               navigationMenuTriggerStyle(),
-                              "block my-4 font-semibold  text-slate-100",
+                              "block my-4 font-semibold  text-slate-700",
                             )}
                             render={<Link href={link.href}>{link.title}</Link>}
                             href={link.href}

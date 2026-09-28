@@ -69,25 +69,31 @@ export const PartnersLogo=[
 export const FooterLinks1=[
   {
     id:1,
-    link:"Services",
-    href:"/#services",
+    link:"Executive Support",
+    href:"/executive-support",
   },
   {
     id:2,
-    link:"How it works",
-    href:"/how-it-works",
+    link:"Digital Marketing",
+    href:"/digital-marketing",
   },
   {
     id:3,
-    link:"Plans & Rates",
-    href:"/plans-and-rates",
+    link:"Websites",
+    href:"/websites",
   },
+  {
+    id:4,
+    link:"Cleaning Services",
+    href:"/cleaning-services",
+  },
+  
 ]
 export const FooterLinks2=[
   {
     id:1,
     link:"Team",
-    href:"/#",
+    href:"/about-us",
   },
   {
     id:2,
@@ -96,7 +102,12 @@ export const FooterLinks2=[
   },
   {
     id:3,
-    link:"Media & Blogs",
-    href:"/#",
+    link:"How it works",
+    href:"/how-it-works",
+  },
+  {
+    id:4,
+    link:"Plans & Rates",
+    href:"/plans-and-rates",
   },
 ]
