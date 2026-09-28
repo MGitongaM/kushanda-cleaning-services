@@ -65,7 +65,14 @@ export default function FooterSection() {
               <Copyright size={12} className="inline-block shrink-0" />
               <span>Copyright Kushanda | Created by Kushanda | </span>
               <span>{new Date().getFullYear()}</span>
-              <span>| Privacy Policy | Cookie Policy | Terms of Use</span>
+              <span>|
+                <Link href="privacy-policy" target="_blank">Privacy Policy</Link>
+                  | 
+                 <Link href="cookie-policy" target="_blank">Cookie Policy</Link>
+                  |
+                 <Link href="terms-of-use" target="_blank">Terms of Use</Link>
+                  
+                 </span>
             </p>
           </div>
         </div>
