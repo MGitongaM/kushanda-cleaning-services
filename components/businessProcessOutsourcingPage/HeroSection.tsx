@@ -21,12 +21,12 @@ export default function HeroSection() {
             </div>
             <div className="flex flex-col lg:flex-row  justify-center md:justify-start items-start gap-4 mt-10">
               <Link href="#contactUs">
-                <Button className="bg-blue-600  text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <Button className="bg-amber-600  text-white hover:bg-amber-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   Discuss Your Needs With Us
                 </Button>
               </Link>
               <Link href="#coreServices">
-                <Button className="bg-gray-600 text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                <Button className="bg-yellow-200 text-slate-900 hover:bg-yellow-300 focus:ring-4 focus:ring-yellow-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-yellow-800">
                   Explore Our Services
                 </Button>
               </Link>

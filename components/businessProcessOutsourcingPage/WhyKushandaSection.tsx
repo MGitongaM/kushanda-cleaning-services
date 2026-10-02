@@ -15,7 +15,7 @@ export default function WhyKushandaSection() {
          
                      <div className="col-span-7 flex flex-wrap gap-8 my-20 ">
                      {corePillarsData.map((service) => (
-                       <div key={service.id} className="bg-slate-200 rounded-lg shadow-md w-full md:w-[25dvw]">
+                       <div key={service.id} className="bg-slate-100 rounded-lg shadow-md w-full md:w-[25dvw]">
                          
                          <div className="my-12 px-2 md:px-5 text-start">
                           <div className="flex items-center gap-4 mb-4">

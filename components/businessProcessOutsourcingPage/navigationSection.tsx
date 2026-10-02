@@ -63,7 +63,7 @@ export default function NavigationSection() {
                       key={link.id}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "text-slate-700 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-cyan-200",
+                        "text-slate-700 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-yellow-200",
                       )}
                       render={<Link href={link.href}>{link.title}</Link>}
                       href={link.href}
