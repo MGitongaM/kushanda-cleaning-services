@@ -87,6 +87,11 @@ export const FooterLinks1=[
     link:"Cleaning Services",
     href:"/cleaning-services",
   },
+  {
+    id:5,
+    link:"Business Process Outsourcing",
+    href:"/business-process-outsourcing",
+  },
   
 ]
 export const FooterLinks2=[
