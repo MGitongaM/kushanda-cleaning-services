@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="px-4 pt-28 pb-10 sm:pt-3 mt-10 lg:mt-5">
+    <section className="px-4 pt-28 pb-10 sm:pt-10 mt-10 lg:mt-5">
       <div className="container mx-auto">
         <div className=" min-h-[70dvh] sm:min-h-[75dvh] grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-between">
           <div className="max-w-2xl">
@@ -20,19 +20,19 @@ export default function HeroSection() {
               </p>
             </div>
             <div className="flex justify-center md:justify-start items-center gap-4 mt-10">
-              <Link href="#contact-us">
-                <Button className="bg-blue-600 text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <Link href="#contactUs">
+                <Button className="bg-blue-600  text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   Discuss Your Needs With Us
                 </Button>
               </Link>
-              <Link href="#core-services">
-                <Button className="bg-gray-600 text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-8 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+              <Link href="#coreServices">
+                <Button className="bg-gray-600 text-white hover:bg-gray-700 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                   Explore Our Services
                 </Button>
               </Link>
             </div>
           </div>
-          <div className="w-fullh-full">
+          <div className="w-full h-full">
             <CloudinaryImage
               imgSrc="HeroSectionImage"
               width={1500}

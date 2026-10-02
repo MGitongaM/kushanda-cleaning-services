@@ -83,27 +83,71 @@ export const corePillarsData = [
     {
         id:1,
         title:`Process Driven Accountability`,
-        iconSrc:<ListSortAscendingIcon className="w-6 h-6 text-blue-600" />,
+        iconSrc:<ListSortAscendingIcon className="size-10 text-yellow-400" />,
         description:`We establish clear SOPs, performance metrics, and dedicated oversight so workflows run smoothly`,
     },
 
     {
         id:2,
         title:`Continuous Professional Development`,
-        iconSrc:<Repeat2 className="w-6 h-6 text-blue-600" />,
+        iconSrc:<Repeat2 className="size-10 text-yellow-400" />,
         description:`Comprehensive training and coaching keep our teams sharp, motivated, and aligned with global standards`,
     },
 
     {
         id:3,
         title:`Cross Border Reach`,
-        iconSrc:<Globe className="w-6 h-6 text-blue-600" />,
+        iconSrc:<Globe className="size-10 text-yellow-400" />,
         description:`Tap into a talent pool spanning Zimbabwe, Kenya, and the UK for flexible coverage and native English capabilities.`,
     },
     {
         id:4,
         title:`Scalable Operations`,
-        iconSrc:<ChartSpline className="w-6 h-6 text-blue-600" />,
+        iconSrc:<ChartSpline className="size-10 text-yellow-400" />,
         description:`Effortlessly expand or adapt your dedicated remote support team as business requirements evolve.`,
+    },
+]
+
+export const impactData = [
+    {
+        id:1,
+        title:`Skills & Coaching`,
+        iconSrc:``,
+        description:`Providing ongoing mentorship, technology access, and career development.`,
+    },
+    {
+        id:2,
+        title:`Sustainable Careers`,
+        iconSrc:``,
+        description:`Building long term, high quality jobs rather than transactional gig work.`,
+    },
+    {
+        id:3,
+        title:`Client Advantage`,
+        iconSrc:``,
+        description:`Highly motivated, loyal, and committed remote teams that genuinely care about your business success`,
+    },
+]
+
+export const howItWorksData = [
+    {
+        id:1,
+        title:`Discovery & Needs Assessment`,
+        description:`We analyze your current processes, challenges, and goals to define the ideal support model`,
+    },
+    {
+        id:2,
+        title:`Team & Process Design`,
+        description:`We custombuild your remote team and establish clear workflows, SOPs, and service expectations`,
+    },
+    {
+        id:3,
+        title:`Onboarding & Integration`,
+        description:`Seamless integration into your operational tools, communication channels, and culture`,
+    },
+    {
+        id:4,
+        title:`Ongoing Management & Optimization`,
+        description:`Continuous oversight, performance monitoring, and team development for long-term delivery`,
     },
 ]
