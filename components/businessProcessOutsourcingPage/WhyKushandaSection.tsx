@@ -3,7 +3,7 @@ import { corePillarsData } from "@/constData/businessProcessOutsourcingData";
 
 export default function WhyKushandaSection() {
   return (
-     <section id="whyUs" className="px-4 pb-10 sm:pt-12  bg-yellow-100">
+     <section id="whyUs" className="px-4 pb-10 pt-20 sm:pt-12  bg-yellow-100">
                <div className="container mx-auto">
                  <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
                    <div className="container mx-auto text-center text-balance" >

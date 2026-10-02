@@ -4,22 +4,22 @@ import { Button } from "../ui/button";
 
 export default function HeroSection() {
   return (
-    <section className="px-4 pt-28 pb-10 sm:pt-10 mt-10 lg:mt-5">
+    <section className="px-4 pt-28 pb-10  sm:pt-10 mt-10 lg:mt-5">
       <div className="container mx-auto">
-        <div className=" min-h-[70dvh] sm:min-h-[75dvh] grid grid-cols-1 md:grid-cols-2 gap-2 items-center justify-between">
-          <div className="max-w-2xl">
+        <div className=" min-h-[70dvh] sm:min-h-[75dvh] grid grid-cols-1  md:grid-cols-2 gap-2 items-center justify-between">
+          <div className="max-w-2xl pt-20">
             <div className="text-start">
-              <h1 className="text-7xl font-bold text-balance">
+              <h1 className="text-5xl lg:text-7xl font-bold text-balance">
                 Elevate Your Operations with Reliable, Impact Driven Remote
                 Talent
               </h1>
-              <p className="text-lg text-gray-600 mt-20 text-balance">
+              <p className="text-lg font-semibold text-gray-600 mt-20 text-balance">
                 Kushanda connects global organizations with skilled
                 professionals in Zimbabwe and Kenya to streamline your customer
                 support, administration, and back office operations.
               </p>
             </div>
-            <div className="flex justify-center md:justify-start items-center gap-4 mt-10">
+            <div className="flex flex-col lg:flex-row  justify-center md:justify-start items-start gap-4 mt-10">
               <Link href="#contactUs">
                 <Button className="bg-blue-600  text-white hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                   Discuss Your Needs With Us

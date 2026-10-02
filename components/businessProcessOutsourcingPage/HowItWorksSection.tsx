@@ -3,17 +3,17 @@ import { howItWorksData } from "@/constData/businessProcessOutsourcingData";
 
 export default function HowItWorksSection() {
   return (
-    <section id="howItWorks" className="px-4 pb-10 sm:pt-12  bg-yellow-100">
+    <section id="howItWorks" className="px-4 pb-10 pt-20 sm:pt-12  bg-yellow-100">
                    <div className="container mx-auto">
                      <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
                        <div className="container mx-auto text-center text-balance" >
                         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 my-1 ">
                           <div className="col-span-5 grid place-content-center text-start">
-                              <h2 className="text-4xl  font-bold ">How It Works</h2>
+                              <h2 className="text-2xl md:text-4xl  font-bold ">How It Works</h2>
                               
                           </div>
              
-                         <div className="col-span-7 flex flex-wrap gap-8 my-20 ">
+                         <div className="col-span-7 flex flex-wrap gap-8 my-4 md:my-20 ">
                          {howItWorksData.map((service) => (
                            <div key={service.id} className="bg-slate-100 rounded-lg shadow-md w-full ">
                              

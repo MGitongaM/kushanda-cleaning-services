@@ -8,11 +8,11 @@ export default function CoreServicesSection() {
            <div className="container mx-auto">
              <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
                <div className="max-w-7xl mx-auto text-center text-balance" >
-                 <h2 className="text-4xl  font-bold ">What Kushanda Can Support With</h2>
+                 <h2 className="text-2xl md:text-4xl  font-bold ">What Kushanda Can Support With</h2>
                  <p className="text-lg font-medium my-6">Flexible, scalable remote functions built around your operational needs.</p>
                  </div>
      
-                 <div className="grid grid-cols-2 md:grid-cols-3 gap-8 my-20 ">
+                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-20 ">
                  {coreServicesData.map((service) => (
                    <div key={service.id} className="bg-amber-100 rounded-lg shadow-md">
                      

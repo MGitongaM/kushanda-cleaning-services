@@ -8,10 +8,10 @@ export default function ValuePropositionSection() {
       <div className="container mx-auto">
         <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
           <div className="max-w-7xl mx-auto ">
-            <h2 className="text-4xl  font-bold text-center text-balance">BPO Beyond Cost Saving: Remote Support That Creates Value</h2>
+            <h2 className="text-4xl  font-bold text-center text-balance">BPO Beyond Cost Saving; Remote Support That Creates Value</h2>
             </div>
 
-            <div className="grid grid-cols-2 gap-8 my-20 ">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-20 ">
             {valuePropositionData.map((value) => (
               <div key={value.id} className="bg-white rounded-lg shadow-md grid grid-cols-2 gap-4 items-center">
                 
@@ -22,7 +22,7 @@ export default function ValuePropositionSection() {
                   alt={value.title}
                   classNames="w-96 h-96 object-cover object-top rounded-l-md"
                 />
-                <div className="my-12 px-2 md:px-10">
+                <div className="my-12 px-2 lg:px-10">
                   <h3 className="text-xl font-bold  mb-2">{value.title}</h3>
                   <p className="text-gray-600 ">{value.description}</p>
 
