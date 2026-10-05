@@ -4,7 +4,7 @@ import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 
 export default function CoreServicesSection() {
   return (
-     <section id="coreServices" className="px-4 pt-28 pb-10 sm:pt-32  bg-slate-50">
+     <section id="coreServices" className="px-4 pt-28 pb-10 sm:pt-10  bg-slate-50">
            <div className="container mx-auto">
              <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
                <div className="max-w-7xl mx-auto text-center text-balance" >

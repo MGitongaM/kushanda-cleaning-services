@@ -15,7 +15,7 @@ import { getCldOgImageUrl } from "next-cloudinary";
 const url= getCldOgImageUrl({src:"Business_Process_Outsourcing_OG"})
 export const metadata: Metadata = {
   title: "Business Process Outsourcing | Kushanda",
-  description: "Kushanda connects global organizations with skilled professionals to streamline your customer support, administration, and back office operations.",
+  description: "Streamline your operations with Kushanda. We connect global organizations with skilled professionals for customer support, administration, and back office operations",
   openGraph:{
     images:[
       {

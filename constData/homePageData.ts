@@ -92,6 +92,11 @@ export const FooterLinks1=[
     link:"Business Process Outsourcing",
     href:"/business-process-outsourcing",
   },
+  {
+    id:6,
+    link:"Carers and Nurses",
+    href:"/carers-and-nurses",
+  },
   
 ]
 export const FooterLinks2=[
