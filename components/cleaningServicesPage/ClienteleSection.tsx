@@ -11,7 +11,7 @@ export default function ClienteleSection() {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {OurClients.map((client) => (
             <div
-              className="w-full bg-cyan-50 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
+              className="w-full bg-teal-50 rounded-lg overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
               key={client.id}
             >
               <div className="h-52 sm:h-64 w-full bg-blue-100 overflow-hidden shrink-0">
@@ -23,7 +23,7 @@ export default function ClienteleSection() {
                   classNames="object-cover h-full w-full"
                 />
               </div>
-              <div className="px-4 sm:px-6 py-6 sm:py-8 flex flex-col gap-2 flex-1">
+              <div className="px-4 sm:px-6 lg:px-12 py-6 sm:py-8 flex flex-col gap-2 flex-1">
                 <p className="text-lg sm:text-xl font-semibold">
                   {client.title}
                 </p>

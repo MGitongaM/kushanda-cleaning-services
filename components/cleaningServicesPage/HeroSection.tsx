@@ -35,7 +35,7 @@ export default function HeroSection() {
                 href="#contact-us"
                 className={cn(
                   buttonVariants({ variant: "secondary", size: "lg" }),
-                  "w-full sm:w-auto px-8 py-6 text-base sm:text-lg hover:bg-lime-100"
+                  "w-full sm:w-auto px-8 py-6 text-base sm:text-lg hover:bg-cyan-100"
                 )}
               >
                 Contact Us

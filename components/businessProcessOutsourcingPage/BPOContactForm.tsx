@@ -208,7 +208,7 @@ export default function BPOContactForm() {
           {/* <Button type="button" variant="outline" onClick={() => form.reset()}>
             Reset
           </Button> */}
-          <Button type="submit" size="lg" form="contact-form-1" className="w-full sm:w-auto px-8 py-6 bg-lime-600 text-base sm:text-lg" disabled={form.formState.isSubmitting}>
+          <Button type="submit" size="lg" form="contact-form-1" className="w-full sm:w-auto px-8 py-6 bg-blue-600 text-base sm:text-lg" disabled={form.formState.isSubmitting}>
             {form.formState.isSubmitting ?"Submitting...":"Submit"}
           </Button>
         </Field>

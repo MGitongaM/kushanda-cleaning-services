@@ -5,19 +5,19 @@ export const leadershipData=[
         id:1,
         title:"Person Centred Care",
         description:"Tailored support built around individual dignity, independence, and personal preferences.",
-        iconSrc:<CircleUserIcon className="size 10 text-sky-400" />,
+        iconSrc:<CircleUserIcon className="size 10 text-green-400" />,
     },
     {
         id:2,
         title:"Uncompromising Standards",
         description:"Thorough screening, reference checks, and full regulatory compliance.",
-        iconSrc:<BadgeCheckIcon className="size 10 text-sky-400" />,
+        iconSrc:<BadgeCheckIcon className="size 10 text-green-400" />,
     },
     {
         id:3,
         title:"Flexible Placement",
         description:"Seamlessly accommodating both short-term agency coverage and direct employment.",
-        iconSrc:<ArrowUpDownIcon className="size 10 text-sky-400" />
+        iconSrc:<ArrowUpDownIcon className="size 10 text-green-400" />
     },
 ]
 
@@ -98,24 +98,24 @@ export const complianceData=[
         id:1,
         title:`Vetting & Right To Work`,
         description:`Full background checks, reference verifications, and right to work clearance in Guernsey`,
-        iconSrc:<ClipboardList className="size 10 text-sky-400" />,
+        iconSrc:<ClipboardList className="size 10 text-green-400" />,
     },
     {
         id:2,
         title:`Qualifications & Registration`,
         description:`Thorough verification of professional credentials, certifications, and nursing registrations.`,
-        iconSrc:<BadgeCheckIcon className="size 10 text-sky-400" />,
+        iconSrc:<BadgeCheckIcon className="size 10 text-green-400" />,
     },
     {
         id:3,
         title:`Safeguards & Insurance:`,
         description:`Comprehensive adherence to local safeguarding procedures and full insurance coverage.`,
-        iconSrc:<ShieldCheck className="size 10 text-sky-400" />,
+        iconSrc:<ShieldCheck className="size 10 text-green-400" />,
     },
     {
         id:4,
         title:`Guernsey Regulatory Compliance`,
         description:`Operating strictly within Guernsey's healthcare guidelines and regulatory frameworks`,
-        iconSrc:<StarCheck className="size 10 text-sky-400" />,
+        iconSrc:<StarCheck className="size 10 text-green-400" />,
     },
 ]

@@ -23,7 +23,7 @@ export default function PurposeImpactSection() {
                 {impactData.map((data) => (
                   <div
                     key={data.id}
-                    className={` rounded-lg shadow-md w-full h-auto md:min-h-[32dvh] lg:min-h-[3dvh] md:w-[28dvw] ${data.id === 1 ? "bg-amber-100" : data.id === 2 ? "bg-amber-200" : "bg-amber-300"} `}
+                    className={` rounded-lg shadow-md w-full h-auto md:min-h-[32dvh] lg:min-h-[3dvh] md:w-[28dvw] ${data.id === 1 ? "bg-blue-100" : data.id === 2 ? "bg-blue-200" : "bg-blue-300"} `}
                   >
                     <div className="my-12 px-2 md:px-5 text-start">
                       <div className="flex items-center gap-4 mb-4">

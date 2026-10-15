@@ -33,7 +33,7 @@ export default function ComplianceSection() {
                   {complianceData.map((compliance) => (
                     <div
                       key={compliance.id}
-                      className="bg-sky-100 rounded-lg shadow-md w-full "
+                      className="bg-green-100 rounded-lg shadow-md w-full "
                     >
                       <div className="my-12 px-2 md:px-5 text-start">
                         <div className="flex items-center gap-4 mb-4">

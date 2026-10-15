@@ -83,27 +83,27 @@ export const corePillarsData = [
     {
         id:1,
         title:`Process Driven Accountability`,
-        iconSrc:<ListSortAscendingIcon className="size-10 text-yellow-400" />,
+        iconSrc:<ListSortAscendingIcon className="size-10 text-blue-700" />,
         description:`We establish clear SOPs, performance metrics, and dedicated oversight so workflows run smoothly`,
     },
 
     {
         id:2,
         title:`Continuous Professional Development`,
-        iconSrc:<Repeat2 className="size-10 text-yellow-400" />,
+        iconSrc:<Repeat2 className="size-10 text-blue-700" />,
         description:`Comprehensive training and coaching keep our teams sharp, motivated, and aligned with global standards`,
     },
 
     {
         id:3,
         title:`Cross Border Reach`,
-        iconSrc:<Globe className="size-10 text-yellow-400" />,
+        iconSrc:<Globe className="size-10 text-blue-700" />,
         description:`Tap into a talent pool spanning Zimbabwe, Kenya, and the UK for flexible coverage and native English capabilities.`,
     },
     {
         id:4,
         title:`Scalable Operations`,
-        iconSrc:<ChartSpline className="size-10 text-yellow-400" />,
+        iconSrc:<ChartSpline className="size-10 text-blue-700" />,
         description:`Effortlessly expand or adapt your dedicated remote support team as business requirements evolve.`,
     },
 ]

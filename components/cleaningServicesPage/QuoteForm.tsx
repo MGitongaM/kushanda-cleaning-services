@@ -76,7 +76,7 @@ export default function QuoteForm() {
             <Button
               type="button"
               size="lg"
-              className="w-full sm:w-auto px-8 py-6 bg-green-600 hover:bg-green-700 text-base sm:text-lg"
+              className="w-full sm:w-auto px-8 py-6 bg-cyan-600 hover:bg-green-700 text-base sm:text-lg"
             >
               Get a Quote
             </Button>
@@ -195,7 +195,8 @@ export default function QuoteForm() {
                 
               </FieldGroup>
           <div className="mt-6">
-            <Button type="submit" size="lg" className="w-full sm:w-auto px-8 py-6 bg-lime-600 text-base sm:text-lg" disabled={form.formState.isSubmitting}>
+            {/* <Button type="submit" size="lg" className="w-full sm:w-auto px-8 py-6 bg-lime-600 text-base sm:text-lg" disabled={form.formState.isSubmitting}> */}
+            <Button type="submit" size="lg" className="w-full sm:w-auto px-8 py-6 bg-cyan-600 text-base sm:text-lg" disabled={form.formState.isSubmitting}>
                 {form.formState.isSubmitting ?"Submitting...":"Submit"}
               </Button>
           </div>

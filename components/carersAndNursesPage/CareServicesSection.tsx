@@ -23,7 +23,7 @@ export default function CareServicesSection() {
               {careServicesData.map((service) => (
                 <div
                   key={service.id}
-                  className="bg-blue-100 rounded-lg shadow-md"
+                  className="bg-green-100 rounded-lg shadow-md"
                 >
                   <CloudinaryImage
                     imgSrc={service.imageSrc}

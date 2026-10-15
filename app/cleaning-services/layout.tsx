@@ -1,4 +1,4 @@
-import FooterSection from "@/components/cleaningServicesPage/FooterSection";
+// import FooterSection from "@/components/cleaningServicesPage/FooterSection";
 import NavigationSection from "@/components/cleaningServicesPage/NavigationSection";
 
 
@@ -28,7 +28,7 @@ export default function CleaningServicesLayout({children}:LayoutProps<"/cleaning
         <body className="min-h-full flex flex-col">
             <NavigationSection/>
                 {children}
-            <FooterSection/>
+            {/* <FooterSection/> */}
         </body>
      </html>
   )

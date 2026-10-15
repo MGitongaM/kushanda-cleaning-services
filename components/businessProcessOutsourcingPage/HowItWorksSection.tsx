@@ -3,7 +3,7 @@ import { howItWorksData } from "@/constData/businessProcessOutsourcingData";
 
 export default function HowItWorksSection() {
   return (
-    <section id="howItWorks" className="px-4 pb-10 pt-20 sm:pt-12  bg-yellow-100">
+    <section id="howItWorks" className="px-4 pb-10 pt-20 sm:pt-12  bg-blue-100">
                    <div className="container mx-auto">
                      <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
                        <div className="container mx-auto text-center text-balance" >
@@ -19,7 +19,7 @@ export default function HowItWorksSection() {
                              
                              <div className="my-12 px-2 md:px-5 text-start">
                               <div className="flex items-center gap-4 mb-4">
-                                <span className="bg-amber-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
+                                <span className="bg-blue-600 text-white rounded-full w-8 h-8 flex items-center justify-center">
                                   {service.id}
                                 </span>
                                 <h3 className="text-xl font-bold  mb-2">{service.title}</h3>

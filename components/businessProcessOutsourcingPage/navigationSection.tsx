@@ -38,19 +38,21 @@ export default function NavigationSection() {
       <nav className=" fixed z-50">
         {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
         {/* <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[96dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-8"> */}
-        <NavigationMenu className=" bg-orange-100/80 backdrop-blur-md min-w-dvw mx-auto   top-0  ">
-          <NavigationMenuList className=" flex py-8">
+        <NavigationMenu className=" bg-blue-100/80 backdrop-blur-md min-w-dvw mx-auto   top-0  ">
+          <NavigationMenuList className=" flex py-4">
             <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
               <NavigationMenuLink
                 href="/"
                 className="bg-transparent hover:bg-transparent active:bg-transparent focus:bg-transparent"
               >
                 <CloudinaryImage
-                  imgSrc={"Kushanda_Cleaning_Services_logo_1"}
+                  // imgSrc={"Kushanda_Cleaning_Services_logo_1"}
+                  imgSrc={"Kushand_Logo_White_Transparent"}
                   height={400}
                   width={400}
                   alt={`Kushanda Cleaning Services logo image`}
-                  classNames={"object-cover hidden h-24 w-64 rounded-lg"}
+                  // classNames={"object-cover  h-24 w-64 rounded-lg"}
+                  classNames={"object-contain h-10 sm:h-12 w-auto max-w-[160px] sm:max-w-[220px] lg:max-w-[280px] rounded-lg"}
                 />
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -63,7 +65,7 @@ export default function NavigationSection() {
                       key={link.id}
                       className={cn(
                         navigationMenuTriggerStyle(),
-                        "text-slate-700 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-yellow-200",
+                        "text-slate-700 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-blue-200",
                       )}
                       render={<Link href={link.href}>{link.title}</Link>}
                       href={link.href}

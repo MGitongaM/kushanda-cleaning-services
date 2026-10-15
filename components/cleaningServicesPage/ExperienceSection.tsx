@@ -6,7 +6,7 @@ export default function ExperienceSection() {
           Experience You Can Trust
         </h2>
         <div className="flex flex-col lg:flex-row gap-6 sm:gap-8 lg:gap-10 mt-8 sm:mt-10 max-w-6xl mx-auto">
-          <div className="flex-1 shadow-lg bg-green-100 px-5 sm:px-6 py-8 sm:py-10 lg:py-12 rounded-lg text-balance space-y-6 text-sm sm:text-base leading-relaxed">
+          <div className="flex-1 shadow-lg bg-teal-100 px-5 sm:px-6 py-8 sm:py-10 lg:py-12 rounded-lg text-balance space-y-6 text-sm sm:text-base leading-relaxed">
             <p>
               Kushanda is built on more than a decade of hands on experience
               running a cleaning business in London, serving residential clients
@@ -21,7 +21,7 @@ export default function ExperienceSection() {
             </p>
           </div>
 
-          <div className="flex-1 shadow-lg bg-green-200 px-5 sm:px-6 py-8 sm:py-10 lg:py-12 rounded-lg text-balance space-y-6 text-sm sm:text-base leading-relaxed">
+          <div className="flex-1 shadow-lg bg-teal-200 px-5 sm:px-6 py-8 sm:py-10 lg:py-12 rounded-lg text-balance space-y-6 text-sm sm:text-base leading-relaxed">
             <p>
               We understand that clients need someone they can trust to arrive
               when expected, treat their property with respect and deliver a

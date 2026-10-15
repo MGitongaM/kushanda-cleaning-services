@@ -9,7 +9,7 @@ export default function ServicesSection() {
   return (
     <section id="services">
       <div className="container mx-auto px-4 py-10">
-        <div className="max-w-7xl mx-auto border bg-green-200 rounded-md flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-12 p-5 sm:p-6 lg:p-10">
+        <div className="max-w-7xl mx-auto border bg-teal-200 rounded-md flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6 lg:gap-12 p-5 sm:p-6 lg:p-10">
           <div className="w-full lg:w-[35%]">
             <h2 className="text-3xl sm:text-4xl font-bold leading-tight lg:leading-tight">
               Cleaning You Can Depend On
@@ -33,7 +33,7 @@ export default function ServicesSection() {
           <h3 className="text-2xl sm:text-3xl text-center font-bold mb-6 sm:mb-8">
             Our Cleaning Services
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-y-24">
             {CleaningServices.map((service) => (
               <div
                 className="w-full rounded-lg bg-cyan-50 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
@@ -49,11 +49,11 @@ export default function ServicesSection() {
                     classNames="object-cover h-full w-full"
                   />
                 </div>
-                <div className="p-4 sm:p-5 flex flex-col gap-3 flex-1">
+                <div className="p-4 sm:p-5 flex flex-col gap-3 flex-1 ">
                   <p className="text-lg sm:text-xl font-semibold bg-cyan-100 -mt-10 sm:-mt-12 relative rounded-md px-3 py-2 shadow-sm">
                     {service.title}
                   </p>
-                  <p className="text-sm sm:text-base text-balance leading-relaxed">
+                  <p className="text-sm sm:text-base text-balance leading-relaxed pl-4 lg:py-8">
                     {service.textOne}
                   </p>
                 </div>
@@ -80,8 +80,8 @@ export default function ServicesSection() {
                 </p>
                 <p className="flex items-center gap-2 flex-wrap">
                   Our future services may include:
-                  <ArrowBigRightDash className="hidden lg:block size-6 sm:size-8 shrink-0 text-cyan-700" />
-                  <ArrowBigDownDash className="block lg:hidden size-6 sm:size-8 shrink-0 text-cyan-700" />
+                  <ArrowBigRightDash className="hidden lg:block size-6 sm:size-8 shrink-0 text-teal-700" />
+                  <ArrowBigDownDash className="block lg:hidden size-6 sm:size-8 shrink-0 text-teal-700" />
                 </p>
                 <p className="max-w-lg italic text-xs sm:text-sm text-balance">
                   New services will be introduced carefully, with the
@@ -94,7 +94,7 @@ export default function ServicesSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 {FutureCleaningServices.map((service) => (
                   <div
-                    className="w-full bg-cyan-50 flex flex-col sm:flex-row overflow-hidden rounded-lg hover:shadow-xl transition-all duration-300"
+                    className="w-full bg-teal-50 flex flex-col sm:flex-row overflow-hidden rounded-lg hover:shadow-xl transition-all duration-300"
                     key={service.id}
                   >
                     <div className="px-4 py-5 flex-1 flex flex-col justify-center gap-2 order-2 sm:order-1">

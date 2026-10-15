@@ -4,11 +4,11 @@ import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 
 export default function ValuePropositionSection() {
   return (
-     <section id="valueProposition" className="px-4 pt-28 pb-10 sm:pt-32 mt-10 lg:mt-5 bg-amber-50">
+     <section id="valueProposition" className="px-4 pt-28 pb-10 sm:pt-32 mt-10 lg:mt-5 bg-blue-50">
       <div className="container mx-auto">
         <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
           <div className="max-w-7xl mx-auto ">
-            <h2 className="text-4xl  font-bold text-center text-balance">BPO Beyond Cost Saving; Remote Support That Creates Value</h2>
+            <h2 className="text-4xl  font-bold text-center text-balance">Beyond Cost Saving, Remote Support That Creates Value</h2>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-20 ">

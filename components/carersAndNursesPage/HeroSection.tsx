@@ -20,13 +20,13 @@ export default function HeroSection() {
             </div>
             <div className="flex flex-col lg:flex-row  justify-center md:justify-start items-start gap-4 mt-10">
               <Link href="#contactUs" className="">
-                <Button className="bg-cyan-600  text-white hover:bg-cyan-700 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">
+                <Button className="bg-green-600  text-white hover:bg-green-700 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-cyan-800">
                  
                  Request Staffing
                 </Button>
               </Link>
               <Link href="#coreServices" className="">
-                <Button className="bg-cyan-50 text-slate-900 hover:bg-cyan-400 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-cyan-600 dark:hover:bg-cyan-700 dark:focus:ring-cyan-800">
+                <Button className="bg-green-100 text-slate-900 hover:bg-green-400 focus:ring-4 focus:ring-cyan-300 font-medium rounded-lg text-lg px-5 py-8 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-cyan-800">
                   Find Care Support
                 </Button>
               </Link>

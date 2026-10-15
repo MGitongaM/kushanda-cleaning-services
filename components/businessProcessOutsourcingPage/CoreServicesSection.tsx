@@ -14,7 +14,7 @@ export default function CoreServicesSection() {
      
                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 my-20 ">
                  {coreServicesData.map((service) => (
-                   <div key={service.id} className="bg-amber-100 rounded-lg shadow-md">
+                   <div key={service.id} className="bg-blue-300 rounded-lg shadow-md">
                      
                      <CloudinaryImage 
                        imgSrc={service.imageSrc}

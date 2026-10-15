@@ -4,7 +4,7 @@ import CloudinaryImage from "../mediaComponents/CloudinaryImage";
 export default function LeadershipSection() {
   return (
     <>
-      <section id="leadership" className="px-4 pb-10 pt-20 sm:pt-28  bg-cyan-50">
+      <section id="leadership" className="px-4 pb-10 pt-20 sm:pt-28  bg-green-50">
         <div className="container mx-auto">
           <div className=" min-h-[70dvh] sm:min-h-[75dvh] ">
             <div className="container mx-auto text-center ">
@@ -54,7 +54,7 @@ export default function LeadershipSection() {
                   {leadershipData.map((leader) => (
                     <div
                       key={leader.id}
-                      className="bg-sky-100 rounded-lg shadow-md w-80 lg:w-full "
+                      className="bg-green-100 rounded-lg shadow-md w-80 lg:w-full "
                     >
                       <div className="my-12 px-2 md:px-5 text-start">
                         <div className="flex items-center gap-4 mb-4">
