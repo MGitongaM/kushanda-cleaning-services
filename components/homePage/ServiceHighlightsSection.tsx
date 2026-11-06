@@ -1,3 +1,5 @@
+"use client"
+
 import {
   Calculator,
   Code2,
@@ -5,6 +7,7 @@ import {
   UserSquare,
 } from "lucide-react";
 import CloudinaryImage from "../mediaComponents/CloudinaryImage";
+import { CldImage } from "next-cloudinary";
 
 export default function ServiceHighlightsSection() {
   return (
@@ -22,7 +25,7 @@ export default function ServiceHighlightsSection() {
           </div>
           <div className="w-full lg:w-1/2">
             <div className="grid place-content-center h-full px-4 sm:px-6 lg:px-12 xl:px-20 py-10 sm:py-12 lg:py-16">
-              <h2 className="text-amber-600 text-2xl sm:text-3xl font-medium leading-tight">
+              <h2 className="text-amber-900 text-2xl sm:text-3xl font-medium leading-tight">
                 Empowering Communities Through Tech
               </h2>
               <p className="leading-relaxed sm:leading-8 text-sm sm:text-base mt-4">
@@ -45,10 +48,10 @@ export default function ServiceHighlightsSection() {
         <div className="flex flex-col lg:flex-row" id="services">
           <div className="w-full lg:w-1/2">
             <div className="grid place-content-center h-full px-4 sm:px-6 lg:px-12 xl:px-20 py-10 sm:py-12 lg:py-16">
-              <h2 className="text-amber-600 text-2xl sm:text-3xl font-medium leading-tight">
+              <h2 className="text-amber-900 text-2xl sm:text-3xl font-medium leading-tight">
                 Our Services
               </h2>
-              <p className="text-amber-600 text-lg sm:text-xl font-medium mt-2 mb-4 leading-relaxed">
+              <p className="text-amber-900 text-lg sm:text-xl font-medium mt-2 mb-4 leading-relaxed">
                 Dedicated professional support to deliver what you need
               </p>
               <p className="leading-relaxed sm:leading-8 text-sm sm:text-base">
@@ -64,19 +67,19 @@ export default function ServiceHighlightsSection() {
               <div className="max-w-lg mx-auto grid grid-cols-2 gap-6 sm:gap-10 lg:gap-20 mt-8 sm:mt-10 w-full">
                 <div className="grid place-content-center text-center">
                   <UserSquare className="mx-auto size-16 sm:size-20" />
-                  <p className="text-amber-600 text-xs sm:text-sm lg:text-base mt-2">Executive Support</p>
+                  <p className="text-amber-900 text-xs sm:text-sm lg:text-base mt-2">Executive Support</p>
                 </div>
                 <div className="grid place-content-center text-center">
                   <LaptopMinimalCheck className="mx-auto size-16 sm:size-20" />
-                  <p className="text-amber-600 text-xs sm:text-sm lg:text-base mt-2">Digital Marketing</p>
+                  <p className="text-amber-900 text-xs sm:text-sm lg:text-base mt-2">Digital Marketing</p>
                 </div>
                 <div className="grid place-content-center text-center">
                   <Code2 className="mx-auto size-16 sm:size-20" />
-                  <p className="text-amber-600 text-xs sm:text-sm lg:text-base mt-2">Websites &amp; Coding</p>
+                  <p className="text-amber-900 text-xs sm:text-sm lg:text-base mt-2">Websites &amp; Coding</p>
                 </div>
                 <div className="grid place-content-center text-center">
                   <Calculator className="mx-auto size-16 sm:size-20" />
-                  <p className="text-amber-600 text-xs sm:text-sm lg:text-base mt-2">Account Management</p>
+                  <p className="text-amber-900 text-xs sm:text-sm lg:text-base mt-2">Account Management</p>
                 </div>
               </div>
             </div>
@@ -92,7 +95,13 @@ export default function ServiceHighlightsSection() {
           </div>
         </div>
         <div className="min-h-[25dvh] sm:min-h-[30dvh] relative grid place-content-center px-4 py-10 sm:py-12">
-          <div className="absolute inset-0 bg-[url('https://res.cloudinary.com/hqho8qw7/image/upload/v1789631987/africa_bg_Image.png')] bg-cover bg-center bg-no-repeat" />
+          <CldImage
+            src="africa_bg_Image"
+            alt=""
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 bg-black/50" />
           <div className="relative text-center ">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl text-slate-100 font-semibold leading-tight text-balance px-4">

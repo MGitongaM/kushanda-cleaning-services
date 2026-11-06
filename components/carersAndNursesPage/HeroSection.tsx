@@ -5,9 +5,9 @@ import { Badge } from "../ui/badge";
 
 export default function HeroSection() {
   return (
-    <section className="px-4 pt-2 pb-0  sm:pt-10 mt-10 lg:mt-5">
+    <section className="px-4 pt-2 pb-0 overflow-x-hidden sm:pt-10 mt-10 lg:mt-5">
       <div className="containerr mx-auto">
-        <div className=" min-h-[70dvh] sm:min-h-[75dvh] grid grid-cols-1  md:grid-cols-12 gap-2 items-center justify-between">
+        <div className=" min-h-[70dvh] sm:min-h-[75dvh] min-w-dvw grid grid-cols-1  md:grid-cols-12 gap-2 items-center justify-between">
           {/* <div className="max-w-2xl pt-20"> */}
           <div className="col-span-12 md:col-span-5 max-w-2xl pt-20 lg:pl-20">
             <div className="text-start">
@@ -37,13 +37,13 @@ export default function HeroSection() {
                 {/* <Badge variant="outline">60+ Years Combined Team Experience</Badge> */}
             </div>
           </div>
-          <div className="col-span-12 md:col-span-7 w-full h-full">
+          <div className="col-span-12 md:col-span-7 w-full h-full ">
             <CloudinaryImage
               imgSrc="carers_Hero_Image"
               width={1500}
               height={1500}
               alt="Experienced Carers and Nurses"
-              classNames="rounded-lg  object-cover w-full h-full"
+              classNames="rounded-lg  object-cover object-center w-full h-full"
             />
           </div>
         </div>

@@ -36,11 +36,11 @@ const navLinks = [
 ];
 const servicesLink = [
   // { id: 1, title: "Cleaning Services", href: "/cleaning-services" },
+  { id: 1, title: "Websites", href: "/websites" },
   { id: 2, title: "Executive Support", href: "/executive-support" },
   { id: 3, title: "Digital Marketing", href: "/digital-marketing" },
-  { id: 4, title: "Websites", href: "/websites" },
   {
-    id: 5,
+    id: 4,
     title: "Account Management and Book Keeping",
     href: "/account-management-and-book-keeping",
   },
@@ -53,8 +53,8 @@ export default function NavigationSection() {
       {/* <nav className="fixed top-0 inset-x-0 z-50 px-2 sm:px-4 lg:px-8 "> */}
       <nav className="fixed top-0 inset-x-0 z-50  ">
         {/* <NavigationMenu className=" bg-slate-50 backdrop-blur-md w-full max-w-7xl mx-auto rounded-sm"> */}
-        <NavigationMenu className=" bg-slate-50 backdrop-blur-md min-w-dvw mx-auto">
-          <NavigationMenuList className="flex items-center justify-between py-2 px-2 sm:px-4">
+        <NavigationMenu className=" bg-slate-50 backdrop-blur-md min-w-dvw mx-auto pr-0 lg:pr-10">
+          <NavigationMenuList className="w-full flex items-center justify-between py-2 px-2 sm:px-4">
             <NavigationMenuItem className="flex-1">
               <NavigationMenuLink
                 href="/"
@@ -72,57 +72,46 @@ export default function NavigationSection() {
               </NavigationMenuLink>
             </NavigationMenuItem>
             {/* desktop navigation */}
-            <div className="hidden lg:block flex-1 bg-amber-2000">
-              {/* <div className="grid place-content-center mr-0 lg:mr-"> */}
-              <div className="flex ">
-                <NavigationMenuItem>
+            <NavigationMenuItem className="hidden lg:flex  items-center">
                   <NavigationMenuLink
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                      "text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300",
                     )}
                     render={<Link href="/">Home</Link>}
                   />
-                </NavigationMenuItem>
-                <NavigationMenuItem>
+            </NavigationMenuItem>
+            <NavigationMenuItem className="hidden lg:block">
                   <NavigationMenuTrigger
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
+                      "text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300",
                     )}
                   >
                     Services
                   </NavigationMenuTrigger>
                   <NavigationMenuContent>
-                    <ul>
+                    <ul className="min-w-56 bg-slate-50 p-2">
                       {servicesLink.map((link) => (
-                        <NavigationMenuLink
-                          key={link.id}
-                          className={cn(
-                            navigationMenuTriggerStyle(),
-                            "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
-                          )}
-                          render={<Link href={link.href}>{link.title}</Link>}
-                          href={link.href}
-                        />
+                        <li key={link.id}>
+                          <NavigationMenuLink
+                            className={cn(navigationMenuTriggerStyle(), "w-full text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300")}
+                            render={<Link href={link.href}>{link.title}</Link>}
+                            href={link.href}
+                          />
+                        </li>
                       ))}
                     </ul>
                   </NavigationMenuContent>
-                </NavigationMenuItem>
-                <NavigationMenuItem>
-                  {navLinks.map((link) => (
-                    <NavigationMenuLink
-                      key={link.id}
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
-                      )}
-                      render={<Link href={link.href}>{link.title}</Link>}
-                    />
-                  ))}
-                </NavigationMenuItem>
-              </div>
-            </div>
+            </NavigationMenuItem>
+            {navLinks.map((link) => (
+              <NavigationMenuItem key={link.id} className="hidden lg:block">
+                <NavigationMenuLink
+                  className={cn(navigationMenuTriggerStyle(), "text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300")}
+                  render={<Link href={link.href}>{link.title}</Link>}
+                />
+              </NavigationMenuItem>
+            ))}
             {/* <div className="bg-red-500"> */}
             <NavigationMenuItem className="mr-10 justify-end md:pl-0 hidden">
               <NavigationMenuLink
@@ -137,9 +126,9 @@ export default function NavigationSection() {
             </NavigationMenuItem>
             {/* </div> */}
             {/* mobile navigation */}
-            <div className="block  lg:hidden">
+            <NavigationMenuItem className="block lg:hidden">
               <Sheet open={open} onOpenChange={setOpen}>
-                <SheetTrigger>
+                <SheetTrigger aria-label="Open navigation menu">
                   <MenuSquare size={32} className="text-amber-800 mr-2" />
                 </SheetTrigger>
                 <SheetContent
@@ -152,40 +141,26 @@ export default function NavigationSection() {
                     <SheetDescription></SheetDescription>
                   </SheetHeader>
                   <div className="c">
-                    <div className="flex flex-col justify-center items-center gap-8 list-none">
-                      <NavigationMenuItem>
-                        {navLinks.map((link) => (
-                          <NavigationMenuLink
-                            key={link.id}
-                            className={cn(
-                              navigationMenuTriggerStyle(),
-                              // "block my-4 font-semibold  text-slate-100",
-                              "block my-4 font-semibold  text-amber-600",
-                            )}
-                            render={<Link href={link.href}>{link.title}</Link>}
-                            href={link.href}
-                            onClick={() => setOpen(false)}
-                          />
-                        ))}
-                        <p className="text-amber-400 font-semibold  ml-2">Services<ChevronDown className="text-amber-400 inline-block ml-1"/></p>
-                        {servicesLink.map((link) => (
-                          <NavigationMenuLink
-                            key={link.id}
-                            className={cn(
-                              navigationMenuTriggerStyle(),
-                              "block my-4 ml-4 text-amber-600 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-400",
-                            )}
-                            render={<Link href={link.href}>{link.title}</Link>}
-                            href={link.href}
-                            onClick={() => setOpen(false)}
-                          />
-                        ))}
-                      </NavigationMenuItem>
-                    </div>
+                    <ul className="flex flex-col items-center gap-3 py-4">
+                      {navLinks.map((link) => (
+                        <li key={link.id}>
+                          <Link className="block py-2 font-semibold text-amber-900" href={link.href} onClick={() => setOpen(false)}>{link.title}</Link>
+                        </li>
+                      ))}
+                      <li className="text-amber-900 font-semibold">Services<ChevronDown aria-hidden="true" className="inline-block ml-1"/>
+                        <ul className="mt-2">
+                          {servicesLink.map((link) => (
+                            <li key={link.id}>
+                              <Link className="block py-2 pl-4 text-amber-900" href={link.href} onClick={() => setOpen(false)}>{link.title}</Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
                 </SheetContent>
               </Sheet>
-            </div>
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </nav>

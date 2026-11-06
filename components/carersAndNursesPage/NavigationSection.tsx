@@ -35,10 +35,9 @@ export default function NavigationSection() {
   return (
     <>
       <nav className=" fixed z-50">
-        {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
-        {/* <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[96dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-8"> */}
-        <NavigationMenu className=" bg-green-100/80 backdrop-blur-md min-w-dvw mx-auto   top-0  ">
-          <NavigationMenuList className=" flex py-4">
+
+        <NavigationMenu className=" bg-green-100/80 backdrop-blur-md min-w-dvw mx-auto pr-0 lg:pr-16  top-0  ">
+          <NavigationMenuList className="w-full flex py-4">
             <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
               <NavigationMenuLink
                 href="/"
@@ -55,23 +54,18 @@ export default function NavigationSection() {
               </NavigationMenuLink>
             </NavigationMenuItem>
             {/* desktop navigation */}
-            <div className="hidden lg:block flex-1 bg-amber-2000">
-              <div className="grid place-content-center mr-0 lg:mr-">
-                <NavigationMenuItem>
-                  {navLinks.map((link) => (
-                    <NavigationMenuLink
-                      key={link.id}
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        "text-slate-700 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-green-200",
-                      )}
-                      render={<Link href={link.href}>{link.title}</Link>}
-                      href={link.href}
-                    />
-                  ))}
-                </NavigationMenuItem>
-              </div>
-            </div>
+            {navLinks.map((link) => (
+              <NavigationMenuItem key={link.id} className="hidden lg:block">
+                <NavigationMenuLink
+                  className={cn(
+                    navigationMenuTriggerStyle(),
+                    "text-slate-700 rounded-sm focus:text-slate-950 font-bold hover:text-slate-950 hover:bg-cyan-200",
+                  )}
+                  render={<Link href={link.href}>{link.title}</Link>}
+                  href={link.href}
+                />
+              </NavigationMenuItem>
+            ))}
             {/* <div className="bg-red-500"> */}
             <NavigationMenuItem className="mr-10 justify-end md:pl-0 hidden">
               <NavigationMenuLink
@@ -88,10 +82,10 @@ export default function NavigationSection() {
             </NavigationMenuItem>
             {/* </div> */}
             {/* mobile navigation */}
-            <div className="block  lg:hidden">
+            <NavigationMenuItem className="block lg:hidden">
               <Sheet open={open} onOpenChange={setOpen}>
-                <SheetTrigger>
-                  <MenuSquare size={32} className="text-cyan-400 mr-2" />
+                <SheetTrigger aria-label="Open navigation menu">
+                  <MenuSquare size={32} className="text-slate-700 mr-2" />
                 </SheetTrigger>
                 <SheetContent
                   side="top"
@@ -103,26 +97,17 @@ export default function NavigationSection() {
                     <SheetDescription></SheetDescription>
                   </SheetHeader>
                   <div className="c">
-                    <div className="flex flex-col justify-center items-center gap-8 list-none">
-                      <NavigationMenuItem>
-                        {navLinks.map((link) => (
-                          <NavigationMenuLink
-                            key={link.id}
-                            className={cn(
-                              navigationMenuTriggerStyle(),
-                              "block my-4 font-semibold  text-slate-100",
-                            )}
-                            render={<Link href={link.href}>{link.title}</Link>}
-                            href={link.href}
-                            onClick={() => setOpen(false)}
-                          />
-                        ))}
-                      </NavigationMenuItem>
-                    </div>
+                    <ul className="flex flex-col items-center gap-3 py-4">
+                      {navLinks.map((link) => (
+                        <li key={link.id}>
+                          <Link className="block py-2 font-semibold text-slate-900" href={link.href} onClick={() => setOpen(false)}>{link.title}</Link>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
                 </SheetContent>
               </Sheet>
-            </div>
+            </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
       </nav>
