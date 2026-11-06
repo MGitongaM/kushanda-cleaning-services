@@ -132,3 +132,12 @@
     @apply font-sans;
   }
 }
+
+.cld-video-player.vjs-error .vjs-error-display {
+  background-color: #0f172a !important;
+  color: #fff;
+}
+
+.cld-video-player.vjs-error .vjs-error-display .vjs-modal-dialog-content {
+  color: #fff;
+}

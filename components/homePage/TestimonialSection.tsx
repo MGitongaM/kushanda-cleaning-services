@@ -15,7 +15,7 @@ export default function TestimonialSection() {
       <section className="c" id="testimonials">
         <div className="bg-amber-50">
           <div className="max-w-4xl mx-auto text-center px-4 py-10 sm:py-16">
-            <p className="text-amber-600 text-xl sm:text-2xl font-medium mb-4 leading-tight">
+            <p className="text-amber-900 text-xl sm:text-2xl font-medium mb-4 leading-tight">
               There is no you or us, there is only “we”
             </p>
             <p className="text-sm leading-7">
@@ -28,7 +28,7 @@ export default function TestimonialSection() {
         </div>
         <div className="">
           <div className="max-w-4xl mx-auto text-center px-4 py-10 sm:py-16">
-            <p className="text-amber-600 text-xl sm:text-2xl font-medium mb-4 leading-tight">
+            <p className="text-amber-900 text-xl sm:text-2xl font-medium mb-4 leading-tight">
               Testimonials from our happy clients
             </p>
           </div>
@@ -82,7 +82,7 @@ export default function TestimonialSection() {
                         />
                       )}
                       <div className="mt-6 sm:mt-8">
-                        <p className="text-xs text-amber-600">{testimonial.title}</p>
+                        <p className="text-xs text-amber-900">{testimonial.title}</p>
                         <p className="text-base sm:text-lg my-2">{testimonial.name}</p>
                       </div>
                     </div>
@@ -90,8 +90,8 @@ export default function TestimonialSection() {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="text-amber-600 bg-amber-300" />
-            <CarouselNext className="text-amber-600 bg-amber-300" />
+            <CarouselPrevious className="text-amber-950 bg-amber-200" />
+            <CarouselNext className="text-amber-950 bg-amber-200" />
           </Carousel>
         </div>
       </section>

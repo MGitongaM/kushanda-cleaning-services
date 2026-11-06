@@ -6,7 +6,7 @@ export default function PartnersSection() {
     <>
       <section className="c">
         <div className="container mx-auto px-4 py-12 sm:py-16 lg:py-20">
-            <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center text-amber-600 font-medium my-4 leading-tight">Our Partners</h3>
+            <h3 className="text-2xl sm:text-3xl lg:text-4xl text-center text-amber-900 font-medium my-4 leading-tight">Our Partners</h3>
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-6 my-8 sm:my-12 lg:my-16">
             
               {PartnersLogo.map((partner) => (
