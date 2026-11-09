@@ -12,8 +12,10 @@ export default function HeroSection() {
             src="hero_homePage"
             alt=""
             fill
-            sizes="100vw"
-            preload
+            // sizes="100vw"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 60vw"
+            loading="eager"
+            fetchPriority="high"
             className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-amber-5000/40" />

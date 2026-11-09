@@ -1,5 +1,5 @@
 import { TestimonialsOne } from "@/constData/homePageData";
-import CloudinaryVideo from "../mediaComponents/CloudinaryVideo";
+import LazyCloudinaryVideo from "../mediaComponents/LazyCloudinaryVideo";
 import {
   Carousel,
   CarouselContent,
@@ -35,7 +35,7 @@ export default function TestimonialSection() {
           {/* testimonial videos  */}
           <div className="flex flex-col lg:flex-row justify-center items-center gap-6 sm:gap-8 lg:gap-20 px-4">
             <div className="border rounded-md overflow-hidden w-full sm:w-10/12 md:w-8/12 lg:w-4/12 max-w-xl">
-              <CloudinaryVideo
+              <LazyCloudinaryVideo
                 src="testimonial_1"
                 autoPlay={false}
                 controls={true}
@@ -45,7 +45,7 @@ export default function TestimonialSection() {
               />
             </div>
             <div className="border rounded-md overflow-hidden w-full sm:w-10/12 md:w-8/12 lg:w-4/12 max-w-xl">
-              <CloudinaryVideo
+              <LazyCloudinaryVideo
                 src="testimonial_2"
                 autoPlay={false}
                 controls={true}
