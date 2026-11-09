@@ -62,8 +62,8 @@ export default function NavigationSection() {
               >
                 <CloudinaryImage
                   imgSrc={"Kushand_Logo_White_Transparent"}
-                  height={400}
-                  width={400}
+                  height={70}
+                  width={280}
                   alt={`Kushanda logo image`}
                   classNames={
                     "object-contain h-10 sm:h-12 w-auto max-w-[160px] sm:max-w-[220px] lg:max-w-[280px] rounded-lg"
@@ -76,7 +76,7 @@ export default function NavigationSection() {
                   <NavigationMenuLink
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300",
+                      "text-amber-900 text-sm rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300",
                     )}
                     render={<Link href="/">Home</Link>}
                   />
@@ -85,7 +85,7 @@ export default function NavigationSection() {
                   <NavigationMenuTrigger
                     className={cn(
                       navigationMenuTriggerStyle(),
-                      "text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300",
+                      "text-amber-900 text-sm rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300",
                     )}
                   >
                     Services
@@ -95,7 +95,7 @@ export default function NavigationSection() {
                       {servicesLink.map((link) => (
                         <li key={link.id}>
                           <NavigationMenuLink
-                            className={cn(navigationMenuTriggerStyle(), "w-full text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300")}
+                            className={cn(navigationMenuTriggerStyle(), "w-full text-amber-900 text-sm rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300")}
                             render={<Link href={link.href}>{link.title}</Link>}
                             href={link.href}
                           />
@@ -107,7 +107,7 @@ export default function NavigationSection() {
             {navLinks.map((link) => (
               <NavigationMenuItem key={link.id} className="hidden lg:block">
                 <NavigationMenuLink
-                  className={cn(navigationMenuTriggerStyle(), "text-amber-900 rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300")}
+                  className={cn(navigationMenuTriggerStyle(), "text-amber-900 text-sm rounded-sm focus:text-slate-950 font-semibold hover:text-slate-950 hover:bg-amber-300")}
                   render={<Link href={link.href}>{link.title}</Link>}
                 />
               </NavigationMenuItem>
@@ -141,17 +141,17 @@ export default function NavigationSection() {
                     <SheetDescription></SheetDescription>
                   </SheetHeader>
                   <div className="c">
-                    <ul className="flex flex-col items-center gap-3 py-4">
+                    <ul className="flex flex-col items-start  gap-3 py-4">
                       {navLinks.map((link) => (
                         <li key={link.id}>
-                          <Link className="block py-2 font-semibold text-amber-900" href={link.href} onClick={() => setOpen(false)}>{link.title}</Link>
+                          <Link className="block py-2 font-semibold pl-16 md:pl-80 text-amber-900 text-sm" href={link.href} onClick={() => setOpen(false)}>{link.title}</Link>
                         </li>
                       ))}
-                      <li className="text-amber-900 font-semibold">Services<ChevronDown aria-hidden="true" className="inline-block ml-1"/>
+                      <li className="text-amber-900 text-sm pl-16 md:pl-80 font-semibold">Services<ChevronDown aria-hidden="true" className="inline-block ml-1"/>
                         <ul className="mt-2">
                           {servicesLink.map((link) => (
                             <li key={link.id}>
-                              <Link className="block py-2 pl-4 text-amber-900" href={link.href} onClick={() => setOpen(false)}>{link.title}</Link>
+                              <Link className="block py-2 pl-4 text-amber-900 text-sm" href={link.href} onClick={() => setOpen(false)}>{link.title}</Link>
                             </li>
                           ))}
                         </ul>
