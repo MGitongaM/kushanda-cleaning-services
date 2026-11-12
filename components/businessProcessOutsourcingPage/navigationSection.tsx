@@ -38,7 +38,7 @@ export default function NavigationSection() {
       <nav className=" fixed z-50">
         {/* <NavigationMenu className=" bg-slate-900/80 backdrop-blur-md min-w-[88dvw] rounded-sm mx-auto   top-1 left-6 md:left-20"> */}
         {/* <NavigationMenu className=" bg-cyan-900/80 backdrop-blur-md min-w-[94dvw] lg:min-w-[96dvw] rounded-sm mx-auto   top-1 left-2 sm:left-6 lg:left-8"> */}
-        <NavigationMenu className=" bg-blue-100/80 backdrop-blur-md min-w-dvw mx-auto   top-0  ">
+        <NavigationMenu className=" bg-blue-100/80 backdrop-blur-md min-w-dvw mx-auto pr-0 lg:pr-20  top-0  ">
           <NavigationMenuList className="w-full flex py-4">
             <NavigationMenuItem className="pl-1 flex-1 lg:pl-10">
               <NavigationMenuLink
